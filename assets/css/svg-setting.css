@@ -32,178 +32,220 @@
 
 /* first */
 .F1-1 {
-    left: -19vw;
+    left: -43.3vw;
+    /* left: -19vw; */
 }
 
 .F1-2 {
-    right: 15.5vw;
+    right: -8.5vw;
+    /* right: 15.5vw; */
 }
 
 .R1-1 {
-    left: -14.5vw;
+    left: -39vw;
+    /* left: -14.5vw; */
 }
 
 .R1-2 {
-    right: 11vw;
+    right: -13vw;
+    /* right: 11vw; */
 }
 
 .O1 {
-    left: -10.5vw;
+    left: -35vw;
+    /* left: -10.5vw; */
 }
 
 .N1 {
-    right: 1vw;
+    right: -23.3vw;
+    /* right: 0.8vw; */
 }
 
-
 .T1-1 {
-    right: -2.5vw;
+    right: -26.5vw;
+    /* right: -2.5vw; */
 }
 
 .T1-2 {
-    left: 2.44vw;
+    left: -22vw;
+    /* left: 2.44vw; */
 }
 
 .E1-1 {
-    right: -6vw;
+    right: -30.2vw;
+    /* right: -6vw; */
 }
 
 .E1-2 {
-    left: 6vw;
+    left: -18.5vw;
+    /* left: 6vw; */
 }
 
 .N1-2 {
-    right: -14vw;
+    right: -38.2vw;
+    /* right: -14vw; */
 }
 
 .D1-1 {
-    left: 15vw;
+    left: -9.5vw;
+    /* left: 15vw; */
 }
 
 .D1-2 {
-    right: -15vw;
+    right: -39.2vw;
+    /* right: -15vw; */
 }
 
 /* second */
 .D2 {
-    left: -21vw;
+    left: -44.3vw;
+    /* left: -20vw; */
 }
 
 .E2-1 {
-    right: 15.5vw;
+    right: -9.2vw;
+    /* right: 14.8vw; */
 }
 
 .E2-2 {
-    left: -15.5vw;
+    left: -39.3vw;
+    /* left: -14.8vw; */
 }
 
 .V2 {
-    right: 7vw;
+    right: -17.5vw;
+    /* right: 6.5vw; */
 }
 
 .E2-3 {
-    right: 5.5vw;
+    right: -18.5vw;
+    /* right: 5.5vw; */
 }
 
 .E2-4 {
-    left: -5.5vw;
+    left: -30vw;
+    /* left: -5.5vw; */
 }
 
 .L2-1 {
-    right: 1vw;
+    right: -23vw;
+    /* right: 1vw; */
 }
 
 .L2-2 {
-    left: -1vw;
+    left: -25.5vw;
+    /* left: -1vw; */
     top: 4.67vw;
 }
 
 .O2 {
-    right: -7vw;
+    right: -31vw;
+    /* right: -7vw; */
 }
 
 .P2-1 {
-    left: 8vw;
+    left: -16.5vw;
+    /* left: 8vw; */
 }
 
 .P2-2 {
-    right: -11.4vw;
+    right: -35.3vw;
+    /* right: -11.4vw; */
 }
 
 .E2-5 {
-    left: 12vw;
+    left: -12.5vw;
+    /* left: 12vw; */
 }
 
 .E2-6 {
-    right: -15.3vw;
+    right: -39vw;
+    /* right: -15.3vw; */
 }
 
 .R2-1 {
-    right: -16.5vw;
+    right: -40.5vw;
+    /* right: -16.5vw; */
 }
 
 .R2-2 {
-    left: 16.5vw;
+    left: -8vw;
+    /* left: 16.5vw; */
 }
 
 /* third */
 .P3-1 {
-    right: 19vw;
+    right: -5.5vw;
+    /* right: 18.5vw; */
 }
 
 .P3-2 {
-    left: -19vw;
+    left: -43vw;
+    /* left: -18.5vw; */
 }
 
 .A3-1 {
-    left: -15.88vw;
+    left: -40vw;
+    /* left: -15.38vw; */
     top: 3.4vw;
 }
 
 .A3-2 {
-    right: 12vw;
+    right: -12.5vw;
+    /* right: 11.5vw; */
 }
 
 .R3-1 {
-    left: -10.5vw;
+    left: -34.5vw;
+    /* left: -10vw; */
 }
 
 .R3-2 {
-    right: 7.2vw;
+    right: -17.5vw;
+    /* right: 6.5vw; */
 }
 
 .K3-1 {
-    left: -6vw;
+    left: -29.7vw;
+    /* left: -5.2vw; */
 }
 
 .K3-2 {
-    right: 2.5vw;
+    right: -22.5vw;
+    /* right: 1.5vw; */
 }
 
 .S3 {
-    left: -1.5vw;
+    left: -25vw;
+    /* left: -0.5vw; */
 }
 
 .E3-1 {
-    right: -3.5vw;
+    right: -28.5vw;
+    /* right: -4.5vw; */
 }
 
 .E3-2 {
-    left: 3.5vw;
+    left: -20vw;
+    /* left: 4.5vw; */
 }
 
 .J3 {
-    right: -10vw;
+    right: -35vw;
+    /* right: -11vw; */
 }
 
 .I3 {
-    left: 12vw;
+    left: -12vw;
+    /* left: 12.5vw; */
 }
 
 .N3-1 {
-    right: -18vw;
+    right: -42vw;
+    /* right: -18vw; */
 }
 
 .N3-2 {
-    left: 18vw;
+    left: -6.5vw;
+    /* left: 18vw; */
 }

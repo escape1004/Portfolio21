@@ -20,25 +20,45 @@ body {
     margin: 0 auto;
 }
 
+::selection{ 
+    color: transparent; 
+    text-shadow: 0 0 5px rgb(255, 255, 255); 
+    transition: all 250ms ease-in; 
+}
+
+::-moz-selection{ 
+    color: transparent; 
+    text-shadow: 0 0 5px rgb(255, 255, 255); 
+    transition: all 250ms ease-in; 
+}
+
 .fixed {
     position: fixed;
 }
 
 .scroll {
-    display: none;
+    /* display: none; */
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+    z-index: 9999;
+    text-align: center;
+    line-height: 40px;
 }
 
 /* section1 */
 #section1 {
-    height: 10000px;
-    position: relative;
-}
-
-#section1 .bg-l {
-    width: 50%;
-    height: 100%;
+    z-index: 9900;
+    height: 16000px;
+    width: 100%;
     background-color: #000;
-    z-index: -1;
+    position: relative;
 }
 
 #section1 .bg-r {
@@ -46,7 +66,6 @@ body {
     height: 100%;
     background-color: #CE2F2D;
     right: 0;
-    z-index: -1;
 }
 
 #section1 .svg-wrap {
@@ -54,6 +73,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     vertical-align: top;
+    z-index: 1;
 }
 
 #section1 .svg-wrap.wrap1 {
@@ -70,7 +90,7 @@ body {
 
 #section1 .svg-wrap img {
     position: fixed;
-    transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition: left .8s cubic-bezier(0.65, 0.05, 0.36, 1), right .8s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 #section1 .bottom {
@@ -84,9 +104,113 @@ body {
 
 #section1 .bottom.left {
     left: 2vw;
-}   
+}
 
 #section1 .bottom.right {
     right: 2vw;
     text-align: right;
+}
+
+/* section2 */
+#section2 {
+    z-index: 9800;
+    height: 16000px;
+    background-color: #000;
+    position: relative;
+}
+
+#section2 .sce {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 18000px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#section2 .sce .cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+}
+
+#section2 .sce .cont .huge-text {
+    font-size: 20vw;
+    font-weight: 500;
+    position: absolute;
+    left: 100vw;
+    top: 25%;
+    transform: translateY(-25%);
+}
+
+#section2 .sce .cont .first-text {
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+    left: 100vw;
+    top: 70%;
+    transform: translateY(-70%);
+    font-family: 'EliceDigitalBaeum_Regular';
+}
+
+#section2 .sce .cont .second-text {
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+    left: 300vw;
+    top: 70%;
+    transform: translateY(-70%);
+    font-family: 'EliceDigitalBaeum_Regular';
+}
+
+#section2 .sce .cont .first-image {
+    position: absolute;
+    left: 270vw;
+    top: 80%;
+    transform: translateY(-80%);
+    z-index: -1;
+}
+
+#section2 .sce .cont .second-image {
+    position: absolute;
+    left: 500vw;
+    top: 10%;
+    transform: translateY(-15%);
+    z-index: -1;
+}
+
+/* section31 */
+#section3 {
+    z-index: 9810;
+    height: 16000px;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+#section3 h2 {
+    color: #fff;
+    font-size: 200px;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    top: 45vh;
+    transform: translate(-50%, -50%);
+}
+
+#section3 .down-img {
+    position: absolute;
+    left: 50%;
+    top: 70vh;
+    transform: translate(-50%, -50%);
 }
