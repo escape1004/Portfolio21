@@ -77,15 +77,15 @@ body {
 }
 
 #section1 .svg-wrap.wrap1 {
-    top: 25vh;
+    top: 30vh;
 }
 
 #section1 .svg-wrap.wrap2 {
-    top: 40vh;
+    top: 45vh;
 }
 
 #section1 .svg-wrap.wrap3 {
-    top: 55vh;
+    top: 60vh;
 }
 
 #section1 .svg-wrap img {
@@ -147,7 +147,7 @@ body {
     font-weight: 500;
     position: absolute;
     left: 100vw;
-    top: 25%;
+    top: 30%;
     transform: translateY(-25%);
 }
 
@@ -156,7 +156,7 @@ body {
     font-weight: 500;
     position: absolute;
     left: 100vw;
-    top: 70%;
+    top: 75%;
     transform: translateY(-70%);
     font-family: 'EliceDigitalBaeum_Regular';
 }
@@ -166,13 +166,14 @@ body {
     font-weight: 500;
     position: absolute;
     left: 300vw;
-    top: 70%;
+    top: 75%;
     transform: translateY(-70%);
     font-family: 'EliceDigitalBaeum_Regular';
 }
 
 #section2 .sce .cont .first-image {
     position: absolute;
+    width: 20vw;
     left: 270vw;
     top: 80%;
     transform: translateY(-80%);
@@ -181,6 +182,7 @@ body {
 
 #section2 .sce .cont .second-image {
     position: absolute;
+    width: 20vw;
     left: 500vw;
     top: 10%;
     transform: translateY(-15%);
