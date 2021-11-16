@@ -50,6 +50,7 @@ body {
     z-index: 9999;
     text-align: center;
     line-height: 40px;
+    font-size: 10px;
 }
 
 /* section1 */
@@ -90,7 +91,7 @@ body {
 
 #section1 .svg-wrap img {
     position: fixed;
-    transition: left .8s cubic-bezier(0.65, 0.05, 0.36, 1), right .8s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition: left .8s cubic-bezier(.69,.33,.22,1.33), right .8s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 #section1 .bottom {
@@ -114,7 +115,7 @@ body {
 /* section2 */
 #section2 {
     z-index: 9800;
-    height: 16000px;
+    height: 12000px;
     background-color: #000;
     position: relative;
 }
@@ -124,7 +125,7 @@ body {
     left: 0;
     top: 0;
     z-index: 1000;
-    width: 18000px;
+    width: 1500vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/bg_01.jpg);
     background-repeat: no-repeat;
@@ -143,6 +144,7 @@ body {
 }
 
 #section2 .sce .cont .huge-text {
+    font-family: 'Raleway';
     font-size: 20vw;
     font-weight: 500;
     position: absolute;
@@ -200,19 +202,18 @@ body {
 
 #section3 h2 {
     color: #fff;
-    font-size: 200px;
+    font-size: 15vw;
     text-transform: uppercase;
     font-family: 'Raleway';
     font-weight: 300;
-    position: absolute;
     left: 50%;
     top: 45vh;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50vh);
 }
 
 #section3 .down-img {
-    position: absolute;
+    width: 1.5vw;
     left: 50%;
     top: 70vh;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50vh);
 }

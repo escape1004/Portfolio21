@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkSejin Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/svg-setting.css">
+</head>
+
+<body>
+    <div class="scroll">0</div>
+    <section id="section1">
+        <span class="bg-r fixed"></span>
+
+        <div class='svg-wrap wrap1'>
+            <!-- left -->
+            <img class='F1-1 s5' src="assets/img/l.svg" alt="F">
+            <img class='R1-1 s5' src="assets/img/l.svg" alt="R">
+            <img class='O1 s5' src="assets/img/O.svg" alt="O">
+            <img class='T1-2 s5' src="assets/img/T1_r.svg" alt="T">
+            <img class='E1-2 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='D1-1 s5' src="assets/img/D1_l.svg" alt="D">
+
+            <!-- right -->
+            <img class='F1-2 s3' src="assets/img/F1_r.svg" alt="F">
+            <img class='R1-2 s5' src="assets/img/R1_r.svg" alt="R">
+            <img class='N1 s5' src="assets/img/N.svg" alt="N">
+            <img class='T1-1 s0' src="assets/img/T1_l.svg" alt="T">
+            <img class='E1-1 s5' src="assets/img/l.svg" alt="E">
+            <img class='N1-2 s5' src="assets/img/N.svg" alt="N">
+            <img class='D1-2 s5' src="assets/img/D1_r.svg" alt="D">
+        </div>
+
+        <div class='svg-wrap wrap2'>
+            <!-- left -->
+            <img class='D2 s5' src="assets/img/D.svg" alt="D">
+            <img class='E2-2 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='E2-4 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='L2-2 s0' src="assets/img/L1_r.svg" alt="L">
+            <img class='P2-1 s5' src="assets/img/l.svg" alt="P">
+            <img class='E2-5 s5' src="assets/img/E2_l.svg" alt="E">
+            <img class='R2-2 s5' src="assets/img/R1_r.svg" alt="R">
+
+            <!-- right -->
+            <img class='E2-1 s5' src="assets/img/l.svg" alt="E">
+            <img class='V2 s5' src="assets/img/V.svg" alt="V">
+            <img class='E2-3 s5' src="assets/img/l.svg" alt="E">
+            <img class='L2-1 s5' src="assets/img/l.svg" alt="L">
+            <img class='O2 s5' src="assets/img/O.svg" alt="O">
+            <img class='P2-2 s3' src="assets/img/P1_r.svg" alt="P">
+            <img class='E2-6 s2h' src="assets/img/E2_r.svg" alt="E">
+            <img class='R2-1 s5' src="assets/img/l.svg" alt="R">
+        </div>
+
+        <div class='svg-wrap wrap3'>
+            <!-- left -->
+            <img class='P3-2 s3' src="assets/img/P1_r.svg" alt="P">
+            <img class='A3-1 s1h' src="assets/img/A1_l.svg" alt="A">
+            <img class='R3-1 s5' src="assets/img/l.svg" alt="R">
+            <img class='K3-1 s5' src="assets/img/l.svg" alt="K">
+            <img class='S3 s5' src="assets/img/S.svg" alt="S">
+            <img class='E3-2 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='I3 s5' src="assets/img/l.svg" alt="I">
+            <img class='N3-2 s5' src="assets/img/N1_r.svg" alt="N">
+
+            <!-- right -->
+            <img class='P3-1 s5' src="assets/img/l.svg" alt="P">
+            <img class='A3-2 s3h' src="assets/img/A1_r.svg" alt="A">
+            <img class='R3-2 s5' src="assets/img/R1_r.svg" alt="R">
+            <img class='K3-2 s5' src="assets/img/K1_r.svg" alt="K">
+            <img class='E3-1 s5' src="assets/img/l.svg" alt="E">
+            <img class='J3 s5' src="assets/img/J.svg" alt="J">
+            <img class='N3-1 s5' src="assets/img/N1_l.svg" alt="N">
+        </div>
+
+        <h2 class="bottom left fixed">portfolio<br>by parksejin</h2>
+        <h2 class="bottom right fixed">frontend<br>developer</h2>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var s = skrollr.init();
+
+        $(window).scroll(function () {
+            let scrollTop = $(window).scrollTop();
+            // 스크롤 값 출력
+            $(".scroll").html(parseInt(scrollTop));
+
+            // 가로모드
+            let goLeft = scrollTop - $("#section2").offset().top
+            if (scrollTop > $("#section2").offset().top) {
+                $(".sce").css("left", -goLeft)
+            }
+        });
+    </script>
+</body>
+
+</html>
