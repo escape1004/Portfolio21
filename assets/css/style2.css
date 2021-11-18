@@ -18,7 +18,12 @@ img {
 
 body {
     margin: 0 auto;
+    /* -ms-overflow-style: none; */
 }
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
 ::selection {
     color: transparent;
@@ -31,10 +36,6 @@ body {
     text-shadow: 0 0 5px rgb(255, 255, 255);
     transition: all 250ms ease-in;
 }
-
-/* .fixed {
-    position: fixed;
-} */
 
 .scroll {
     width: 60px;
@@ -50,6 +51,7 @@ body {
     text-align: center;
     line-height: 40px;
     font-size: 10px;
+    display: none;
 }
 
 /* section1 */
@@ -118,13 +120,13 @@ body {
 /* section2 */
 #section2 {
     z-index: 9800;
-    height: 12000px;
+    height: 5000px;
     background-color: #b672f5;
     position: relative;
 }
 
-#section2 .sce {
-    position: fixed;
+#section2 {
+    position: relative;
     left: 0;
     top: 0;
     z-index: 1000;

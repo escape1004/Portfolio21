@@ -84,7 +84,7 @@
         </div>
     </section>
 
-    <section id="section2">
+    <section id="section2" class="horizon">
 
     </section>
 
@@ -94,6 +94,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
     <script src="assets/script/mainMove.js"></script>
     <script>
+        // gsap.to("body", {
+        //     yPercent: -100,
+        //     y: "100vh",
+        //     scrollTrigger: {
+        //         scrub: 1,
+        //         trigger: "body",
+        //         start: "top top",
+        //         end: document.querySelector("body").clientHeight,
+        //         markers: true
+        //     }
+        // })
+
+        gsap.registerPlugin(ScrollTrigger);
+        let SECTIONS = $("#section2");
+
+        gsap.to(SECTIONS, {
+            xPercent: -5000,
+            ease: "none",
+            scrollTrigger: {
+                trigger: '#section2',
+                end: () => "+=" + document.querySelector("#section2").offsetWidth,
+                pin: true,
+                scrub: 1,
+                snap: 1,
+            }
+        });
+
         let toggleEvent = 0;
 
         function scrollBlock() {
@@ -129,15 +156,9 @@
             if (scrollTop >= 1) {
                 scrollOn();
             }
-
-            // 가로모드
-            // let goLeft = scrollTop - $("#section2").offset().top
-            // if (scrollTop > $("#section2").offset().top) {
-            //     $(".sce").css("left", -goLeft)
-            // }
         });
 
-        // const horizon = document.querySelector(".horizon");
+        const horizon = $(".horizon");
 
         // 가로모드
         // let scrollTotalWidth = horizon.clientWidth;
