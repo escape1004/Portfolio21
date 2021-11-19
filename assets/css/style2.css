@@ -18,6 +18,7 @@ img {
 
 body {
     margin: 0 auto;
+    overflow-x: hidden;
     /* -ms-overflow-style: none; */
 }
 
@@ -118,11 +119,47 @@ body {
 }
 
 /* section2 */
-#section2 {
-    z-index: 9800;
-    height: 5000px;
-    background-color: #b672f5;
-    position: relative;
+#container {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.module {
+    height: 100%;
+    display: flex;
+}
+
+.green {
+    width: 100vw;
+    background-color: rgb(69, 69, 69);
+}
+
+.yellow {
+    width: 100vw;
+    background-color: rgb(103, 103, 103);
+}
+
+.purple {
+    width: 100vw;
+    background-color: rgb(103, 103, 103);
+}
+
+.orange {
+    width: 100vw;
+    background-color: rgb(108, 108, 108);
+}
+
+.blue {
+    width: 100vw;
+    background-color: rgb(152, 152, 152);
+}
+
+.red {
+    width: 100vw;
+    background-color: rgb(198, 198, 198);
 }
 
 #section2 {
@@ -130,25 +167,37 @@ body {
     left: 0;
     top: 0;
     z-index: 1000;
-    width: 1500vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/bg_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-#section2 .sce .cont {
-    width: 100%;
+#section2 .module {
+    width: 4000px;
     height: 100%;
+    display: flex;
     position: relative;
-    text-transform: uppercase;
-    text-align: left;
-    color: #fff;
+    background-color: rgb(215, 155, 255);
 }
 
-#section2 .sce .cont .huge-text {
+#section2 .module:nth-child(2) {
+    width: 1000px;
+    background-color: rgb(134, 241, 104);
+}
+
+#section2 .module:nth-child(3) {
+    width: 1000px;
+    background-color: rgb(241, 225, 104);
+}
+
+#section2 .huge-text {
+    color: #fff;
     font-family: 'Raleway';
     font-size: 20vw;
     font-weight: 500;
@@ -156,9 +205,11 @@ body {
     left: 100vw;
     top: 30%;
     transform: translateY(-25%);
+    text-transform: uppercase;
+    z-index: 9999;
 }
 
-#section2 .sce .cont .first-text {
+#section2 .first-text {
     font-size: 5vw;
     font-weight: 500;
     position: absolute;
@@ -168,7 +219,7 @@ body {
     font-family: 'EliceDigitalBaeum_Regular';
 }
 
-#section2 .sce .cont .second-text {
+#section2 .second-text {
     font-size: 5vw;
     font-weight: 500;
     position: absolute;
@@ -178,7 +229,7 @@ body {
     font-family: 'EliceDigitalBaeum_Regular';
 }
 
-#section2 .sce .cont .first-image {
+#section2 .first-image {
     position: absolute;
     width: 20vw;
     left: 270vw;
@@ -187,13 +238,25 @@ body {
     z-index: -1;
 }
 
-#section2 .sce .cont .second-image {
+#section2 .second-image {
     position: absolute;
     width: 20vw;
     left: 500vw;
     top: 10%;
     transform: translateY(-15%);
     z-index: -1;
+}
+
+/* seciton3 */
+#section3 {
+    height: 2000px;
+    background-color: #393939;
+}
+
+/* seciton3 */
+#section4 {
+    height: 5000px;
+    background-color: #656565;
 }
 
 @media(max-width: 900px) {
