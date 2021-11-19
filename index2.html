@@ -97,13 +97,30 @@
 
     </section>
 
-    <section id="container">
+    <section id="container2">
         <div class="module green"></div>
         <div class="module yellow"></div>
         <div class="module purple"></div>
         <div class="module orange"></div>
         <div class="module blue"></div>
         <div class="module red"></div>
+    </section>
+
+    <section id="section4">
+
+    </section>
+
+    <section id="container3">
+        <div class="module green"></div>
+        <div class="module yellow"></div>
+        <div class="module purple"></div>
+        <div class="module orange"></div>
+        <div class="module blue"></div>
+        <div class="module red"></div>
+    </section>
+
+    <section id="section5">
+
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -116,6 +133,7 @@
         gsap.registerPlugin(ScrollTrigger);
         let container = document.getElementById("container");
         let container2 = document.getElementById("container2");
+        let container3 = document.getElementById("container3");
 
         gsap.to(container, {
             x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
@@ -126,6 +144,30 @@
                 pin: true,
                 scrub: 1,
                 end: () => "+=" + container.offsetWidth
+            }
+        })
+
+        gsap.to(container2, {
+            x: () => -(container2.scrollWidth - document.documentElement.clientWidth) + "px",
+            ease: "none",
+            scrollTrigger: {
+                trigger: container2,
+                invalidateOnRefresh: true,
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + container2.offsetWidth
+            }
+        })
+
+        gsap.to(container3, {
+            x: () => -(container3.scrollWidth - document.documentElement.clientWidth) + "px",
+            ease: "none",
+            scrollTrigger: {
+                trigger: container3,
+                invalidateOnRefresh: true,
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + container3.offsetWidth
             }
         })
 
