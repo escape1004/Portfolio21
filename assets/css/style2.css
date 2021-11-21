@@ -368,7 +368,7 @@ body {
 
 /* seciton5 */
 #section5 {
-    height: 2000px;
+    height: 400vw;
     background-color: #fff;
 }
 
@@ -408,6 +408,12 @@ body {
     display: inline-block;
     text-align: center;
     transform: translateY(50px);
+    transition: all .3s;
+}
+
+#section5 a:hover {
+    color: #fff;
+    background-color: #000;
 }
 
 #section5 img {
