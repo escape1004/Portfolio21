@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 li {
@@ -52,17 +53,20 @@ body {
     text-align: center;
     line-height: 40px;
     font-size: 10px;
-    display: none;
+}
+
+.module {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 /* section1 */
 #section1 {
-    z-index: 9900;
     height: 100vh;
     width: 100%;
     background-color: #000;
     position: relative;
-    cursor: pointer;
 }
 
 #section1 .bg-r {
@@ -104,7 +108,7 @@ body {
     font-size: 2vh;
     font-weight: 700;
     line-height: 2.5vh;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 #section1 .bottom.left {
@@ -120,19 +124,289 @@ body {
 
 /* section2 */
 #container {
-    background-color: grey;
-    display: flex;
+    width: 900vw;
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
 }
 
-#container2 {
-    background-color: grey;
+#section2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+#section2 .module {
+    position: absolute;
+    left: 100vw;
+    width: calc(100% - 200vw);
+}
+
+#section2 .huge-text {
+    font-family: 'Raleway';
+    font-size: 20vw;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-25%);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#section2 .first-text {
+    font-family: 'EliceDigitalBaeum_Regular';
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    transform: translateY(-70%);
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+#section2 .second-text {
+    font-family: 'EliceDigitalBaeum_Regular';
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+    left: 250vw;
+    top: 70%;
+    transform: translateY(-70%);
+    white-space: nowrap;
+}
+
+#section2 .first-image {
+    position: absolute;
+    width: 20vw;
+    left: 220vw;
+    top: 75%;
+    transform: translateY(-75%);
+    z-index: -1;
+}
+
+#section2 .second-image {
+    position: absolute;
+    width: 20vw;
+    left: 500vw;
+    top: 8%;
+    transform: translateY(-8%);
+    z-index: -1;
+}
+
+/* seciton3 */
+#section3 {
+    height: 700vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+#section3 .part {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+}
+
+#section3 .part .left {
+    width: 49%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#section3 .part .right {
+    width: 49%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#section3 .title {
+    font-size: 12vw;
+    font-family: "Raleway";
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section3 .down-img {
+    width: 1.5vw;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#section3 .skill-title {
+    font-family: "Teko";
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 18vw;
+    font-weight: 500;
+    color: #000;
+    -webkit-text-stroke: 3px white;
+    letter-spacing: -8px;
+}
+
+#section3 .skill-title span {
+    font-size: 12vw;
+}
+
+#section3 .skill-percent {
+    font-family: 'Teko';
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 12vw;
+    font-weight: 500;
+    color: #000;
+    -webkit-text-stroke: 3px white;
+    letter-spacing: -8px;
+}
+
+#section3 .skill-desc {
+    font-family: 'Elice DigitalBaeum';
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#section3 .left .skill-title {
+    right: 0;
+}
+
+#section3 .left .skill-percent {
+    right: 0;
+}
+
+#section3 .left .skill-desc {
+    right: 0;
+    text-align: right;
+}
+
+#section3 .right .skill-title {
+    left: 0;
+}
+
+#section3 .right .skill-percent {
+    left: 0;
+}
+
+#section3 .right .skill-desc {
+    left: 0;
+}
+
+/* seciton4 */
+#container2 {
+    width: 600vw;
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
+}
+
+#section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/bg_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+#section4 .module {
+    position: absolute;
+    left: 100vw;
+    width: calc(100% - 200vw);
+}
+
+#section4 .huge-text {
+    font-family: 'Raleway';
+    font-size: 20vw;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-25%);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#section4 .huge-text span {
+    color: transparent;
+    -webkit-text-stroke: 5px white;
+
+}
+
+#section4 .first-text {
+    font-family: 'EliceDigitalBaeum_Regular';
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    transform: translateY(-70%);
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* seciton5 */
+#section5 {
+    height: 2000px;
+    background-color: #fff;
+}
+
+#section5 .alpah {
+    font-family: 'Raleway';
+    font-size: 30vw;
+    font-weight: 700;
+}
+
+#section5 .title {
+    font-family: 'Raleway';
+    font-size: 5vw;
+    font-weight: 100;
+}
+
+#section5 .desc {
+    font-family: 'Chosunilbo_myungjo';
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 900px) {
+    #section1 .svg-wrap.wrap1 {
+        top: 40vh;
+    }
+
+    #section1 .svg-wrap.wrap2 { 
+        top: 50vh;
+    }
+
+    #section1 .svg-wrap.wrap3 {
+        top: 60vh;
+    }
 }
 
 #container3 {
@@ -141,156 +415,4 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
-}
-
-.module {
-    height: 100%;
-    display: flex;
-}
-
-.green {
-    width: 100vw;
-    background-color: rgb(69, 69, 69);
-}
-
-.yellow {
-    width: 100vw;
-    background-color: rgb(103, 103, 103);
-}
-
-.purple {
-    width: 100vw;
-    background-color: rgb(103, 103, 103);
-}
-
-.orange {
-    width: 100vw;
-    background-color: rgb(108, 108, 108);
-}
-
-.blue {
-    width: 100vw;
-    background-color: rgb(152, 152, 152);
-}
-
-.red {
-    width: 100vw;
-    background-color: rgb(198, 198, 198);
-}
-
-#section2 {
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/bg_01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#section2 .module {
-    width: 4000px;
-    height: 100%;
-    display: flex;
-    position: relative;
-    background-color: rgb(215, 155, 255);
-}
-
-#section2 .module:nth-child(2) {
-    width: 1000px;
-    background-color: rgb(134, 241, 104);
-}
-
-#section2 .module:nth-child(3) {
-    width: 1000px;
-    background-color: rgb(241, 225, 104);
-}
-
-#section2 .huge-text {
-    color: #fff;
-    font-family: 'Raleway';
-    font-size: 20vw;
-    font-weight: 500;
-    position: absolute;
-    left: 100vw;
-    top: 30%;
-    transform: translateY(-25%);
-    text-transform: uppercase;
-    z-index: 9999;
-}
-
-#section2 .first-text {
-    font-size: 5vw;
-    font-weight: 500;
-    position: absolute;
-    left: 100vw;
-    top: 75%;
-    transform: translateY(-70%);
-    font-family: 'EliceDigitalBaeum_Regular';
-}
-
-#section2 .second-text {
-    font-size: 5vw;
-    font-weight: 500;
-    position: absolute;
-    left: 300vw;
-    top: 75%;
-    transform: translateY(-70%);
-    font-family: 'EliceDigitalBaeum_Regular';
-}
-
-#section2 .first-image {
-    position: absolute;
-    width: 20vw;
-    left: 270vw;
-    top: 80%;
-    transform: translateY(-80%);
-    z-index: -1;
-}
-
-#section2 .second-image {
-    position: absolute;
-    width: 20vw;
-    left: 500vw;
-    top: 10%;
-    transform: translateY(-15%);
-    z-index: -1;
-}
-
-/* seciton3 */
-#section3 {
-    height: 2000px;
-    background-color: #393939;
-}
-
-/* seciton4 */
-#section4 {
-    height: 2000px;
-    background-color: #656565;
-}
-
-/* seciton5 */
-#section5 {
-    height: 2000px;
-    background-color: #656565;
-}
-
-@media(max-width: 900px) {
-    #section1 .svg-wrap.wrap1 {
-        top: 40vh;
-    }
-
-    #section1 .svg-wrap.wrap2 {
-        top: 50vh;
-    }
-
-    #section1 .svg-wrap.wrap3 {
-        top: 60vh;
-    }
 }

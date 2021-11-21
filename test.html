@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkSejin Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Fauna One", serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            perspective: 1000;
+        }
+
+        .section {
+            height: 100%;
+            width: calc(300% / 1);
+            float: left;
+            position: relative;
+        }
+
+        .section:nth-child(1) {
+            background: #F64747;
+        }
+
+        .section:nth-child(2) {
+            background: #22A7F0;
+        }
+
+        .section:nth-child(3) {
+            background: #F9690E;
+        }
+
+        .section:nth-child(4) {
+            background: #9B59B6;
+        }
+
+        .section:nth-child(5) {
+            background: #03C9A9;
+        }
+
+        .sections {
+            width: 100%;
+            height: 100%;
+        }
+
+        .section__title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" id="js-wrapper">
+        <div class="sections" id="js-slideContainer">
+            <section class="section">
+                <span class="section__title" id="title1">Section One</span>
+                <span id="trigger--title1"></span>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=542"></script>
+    <script src="assets/script/mainMove.js"></script>
+    <script>
+        $(function () { // wait for document ready
+
+            var controller = new ScrollMagic.Controller();
+
+            var horizontalSlide = new TimelineMax()
+                // animate panels
+                .to("#js-slideContainer", 1, {
+                    x: "-100%"
+                })
+
+            // create scene to pin and link animation
+            new ScrollMagic.Scene({
+                    triggerElement: "#js-wrapper",
+                    triggerHook: "onLeave",
+                    duration: "400%"
+                })
+                .setPin("#js-wrapper")
+                .setTween(horizontalSlide)
+                //.addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        });
+    </script>
+</body>
+
+</html>
