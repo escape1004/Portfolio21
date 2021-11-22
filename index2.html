@@ -89,7 +89,7 @@
 
     <!-- section2 -->
     <section id="section2">
-        <div id="container1">
+        <div id="horizontal1">
             <div class="module">
                 <h2 class="huge-text">Hello! I'm Park Sejin, dreaming of becoming a web frontend.</h2>
                 <h3 class="first-text">안녕하세요! 저는 웹 프론트엔드를 개발자를 꿈꾸는 인재 박세진입니다.</h3>
@@ -177,7 +177,7 @@
 
     <!-- section4 -->
     <section id="section4">
-        <div id="container2">
+        <div id="horizontal2">
             <div class="module">
                 <h1 class="huge-text">Project<span>Project</span>Project<span>Project</span></h2>
                     <h3 class="first-text">배우고 습득한 기술들을 토대로 웹 표준, 반응형 웹 등의 다양한 유형의 웹 사이트들을 만들어 보았습니다.</h3>
@@ -258,7 +258,7 @@
 
     <!-- section6 -->
     <section id="section6">
-        <div id="container3">
+        <div id="horizontal3">
             <div class="module">
                 <div class="flex-module">
                     <h2 class="huge-text">SCRIPT<span>SCRIPT</span>MOUSE<span>EFFECT</span></h2>
@@ -404,46 +404,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=542"></script>
-    <script src="assets/script/mainMove.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
     <script>
+        var s = skrollr.init();
+
         gsap.registerPlugin(ScrollTrigger);
-        let container1 = document.getElementById("container1");
-        let container2 = document.getElementById("container2");
-        let container3 = document.getElementById("container3");
+        let horizontal1 = document.getElementById("horizontal1");
+        let horizontal2 = document.getElementById("horizontal2");
+        let horizontal3 = document.getElementById("horizontal3");
 
-        gsap.to(container1, {
-            x: () => -(container1.scrollWidth - document.documentElement.clientWidth) + "px",
+        gsap.to(horizontal1, {
+            x: () => -(horizontal1.scrollWidth - document.documentElement.clientWidth) + "px",
             ease: "none",
             scrollTrigger: {
-                trigger: container1,
+                trigger: horizontal1,
                 invalidateOnRefresh: true,
                 pin: true,
                 scrub: 1,
-                end: () => "+=" + container1.offsetWidth
+                end: () => "+=" + horizontal1.offsetWidth
             }
         })
 
-        gsap.to(container2, {
-            x: () => -(container2.scrollWidth - document.documentElement.clientWidth) + "px",
+        gsap.to(horizontal2, {
+            x: () => -(horizontal2.scrollWidth - document.documentElement.clientWidth) + "px",
             ease: "none",
             scrollTrigger: {
-                trigger: container2,
+                trigger: horizontal2,
                 invalidateOnRefresh: true,
                 pin: true,
                 scrub: 1,
-                end: () => "+=" + container2.offsetWidth
+                end: () => "+=" + horizontal2.offsetWidth
             }
         })
 
-        gsap.to(container3, {
-            x: () => -(container3.scrollWidth - document.documentElement.clientWidth) + "px",
+        gsap.to(horizontal3, {
+            x: () => -(horizontal3.scrollWidth - document.documentElement.clientWidth) + "px",
             ease: "none",
             scrollTrigger: {
-                trigger: container3,
+                trigger: horizontal3,
                 invalidateOnRefresh: true,
                 pin: true,
                 scrub: 1,
-                end: () => "+=" + container3.offsetWidth
+                end: () => "+=" + horizontal3.offsetWidth
             }
         })
 

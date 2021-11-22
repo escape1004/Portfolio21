@@ -126,7 +126,7 @@ body {
 }
 
 /* section2 */
-#container1 {
+#horizontal1 {
     width: 900vw;
     flex-wrap: wrap;
     flex-direction: column;
@@ -314,7 +314,7 @@ body {
 }
 
 /* seciton4 */
-#container2 {
+#horizontal2 {
     width: 600vw;
     flex-wrap: wrap;
     flex-direction: column;
@@ -444,7 +444,7 @@ body {
 }
 
 /* section6 */
-#container3 {
+#horizontal3 {
     width: 1300vw;
     flex-wrap: wrap;
     flex-direction: column;
@@ -520,13 +520,6 @@ body {
     margin-top: 0;
 }
 
-#section7 .part-bridge {
-    height: 100vh;
-    width: 100%;
-    display: block;
-    background: linear-gradient(to bottom, black, white);
-}
-
 #section7 .title {
     font-family: 'Raleway';
     font-size: 10vw;
@@ -536,6 +529,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#section7 .part-bridge {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to bottom, black, white);
 }
 
 #section7 .left {
