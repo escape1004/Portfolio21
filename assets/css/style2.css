@@ -551,7 +551,8 @@ body {
     font-weight: 700;
     font-size: 20vw;
     position: sticky;
-    top: 55vh;
+    top: 65vh;
+    line-height: 0.71;
 }
 
 #section7 .left h2 span {
@@ -618,7 +619,7 @@ body {
 #section8 .right {
     font-family: 'Raleway';
     width: 50%;
-    height: 100%;   
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
