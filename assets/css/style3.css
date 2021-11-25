@@ -589,7 +589,7 @@ body {
 
 /* section2 */
 #horizontal1 {
-    width: 500vw;
+    width: 700vw;
     height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
@@ -602,11 +602,11 @@ body {
     background-attachment: fixed;
     color: #fff;
     position: relative;
+    padding: 0 100vw;
 }
 
 #section2 .module {
     position: absolute;
-    left: 100vw;
     width: calc(100% - 200vw);
 }
 
