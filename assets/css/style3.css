@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.scroll {
+    /* display: none; */
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+    z-index: 9999;
+    text-align: center;
+    line-height: 40px;
+    font-size: 10px;
+}
+
+/* section1 */
+#section1 {
+    width: 100%;
+    height: 20000px;
+    position: relative;
+}
+
+#section1 .sec1-cont {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+#section1 .text-wrap .left,
+#section1 .text-wrap .right {
+    position: absolute;
+    width: 50vw;
+    height: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#section1 .text-wrap .left {
+    background-color: #000;
+    left: 0;
+}
+
+#section1 .text-wrap .right {
+    background-color: #e00020;
+    right: 0;
+}
+
+#section1 .text-wrap .left strong,
+#section1 .text-wrap .right strong {
+    font-family: 'Raleway';
+    font-size: 6vw;
+    text-align: center;
+    display: flex;
+}
+
+#section1 .text-wrap .left strong {
+    font-weight: 900;
+}
+
+#section1 .text-wrap .right strong {
+    font-weight: 100;
+}
+
+/* left-text-a */
+#section1 .left .a-1 {
+    position: relative;
+}
+
+#section1 .left .a-1 .a-1blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.85vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-2 {
+    position: relative;
+}
+
+#section1 .left .a-2 .a-2blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.52vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-3 {
+    position: relative;
+}
+
+#section1 .left .a-3 .a-3blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-4 {
+    position: relative;
+}
+
+#section1 .left .a-4 .a-4blind {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-5 {
+    position: relative;
+}
+
+#section1 .left .a-5 .a-5blind {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.3vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-5 .a-5blind2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.3vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-6 {
+    position: relative;
+}
+
+#section1 .left .a-6 .a-6blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.1vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-7 {
+    position: relative;
+}
+
+#section1 .left .a-7 .a-7blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .a-8 {
+    position: relative;
+}
+
+#section1 .left .a-8 .a-8blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.8vw;
+    height: 100%;
+    background-color: #000;
+}
+
+/* left-text-b */
+#section1 .left .b-1 {
+    position: relative;
+}
+
+#section1 .left .b-1 .b-1blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.8vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-2 {
+    position: relative;
+}
+
+#section1 .left .b-2 .b-2blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.1vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-3 {
+    position: relative;
+}
+
+#section1 .left .b-3 .b-3blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.1vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-4 {
+    position: relative;
+}
+
+#section1 .left .b-4 .b-4blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.1vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-4 .b-4blind2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.1vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-5 {
+    position: relative;
+}
+
+#section1 .left .b-5 .b-5blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-6 {
+    position: relative;
+}
+
+#section1 .left .b-6 .b-6blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.6vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-7 {
+    position: relative;
+}
+
+#section1 .left .b-7 .b-7blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.3vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-8 {
+    position: relative;
+}
+
+#section1 .left .b-8 .b-8blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.1vw;
+    height: 100%;
+    background-color: #000;
+}
+
+#section1 .left .b-9 {
+    position: relative;
+}
+
+#section1 .left .b-9 .b-9blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.6vw;
+    height: 100%;
+    background-color: #000;
+}
+
+/* right-text-a */
+#section1 .right .a-1 {
+    position: relative;
+}
+
+#section1 .right .a-1 .a-1blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-2 {
+    position: relative;
+}
+
+#section1 .right .a-2 .a-2blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3.15vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-3 {
+    position: relative;
+}
+
+#section1 .right .a-3 .a-3blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-4 {
+    position: relative;
+}
+
+#section1 .right .a-4 .a-4blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-5 {
+    position: relative;
+}
+
+#section1 .right .a-5 .a-5blind {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.75vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-5 .a-5blind2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.75vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-6 {
+    position: relative;
+}
+
+#section1 .right .a-6 .a-6blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-7 {
+    position: relative;
+}
+
+#section1 .right .a-7 .a-7blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.1vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .a-8 {
+    position: relative;
+}
+
+#section1 .right .a-8 .a-8blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+/* right-text-b */
+#section1 .right .b-1 {
+    position: relative;
+}
+
+#section1 .right .b-1 .b-1blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3.6vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-2 {
+    position: relative;
+}
+
+#section1 .right .b-2 .b-2blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-3 {
+    position: relative;
+}
+
+#section1 .right .b-3 .b-3blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-4 {
+    position: relative;
+}
+
+#section1 .right .b-4 .b-4blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-5 {
+    position: relative;
+}
+
+#section1 .right .b-5 .b-5blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.8vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-6 {
+    position: relative;
+}
+
+#section1 .right .b-6 .b-6blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.6vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-7 {
+    position: relative;
+}
+
+#section1 .right .b-7 .b-7blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-8 {
+    position: relative;
+}
+
+#section1 .right .b-8 .b-8blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+#section1 .right .b-9 {
+    position: relative;
+}
+
+#section1 .right .b-9 .b-9blind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3.15vw;
+    height: 100%;
+    background-color: #e00020;
+}
+
+/* section2 */
+#section2 {
+    height: 1000vh;
+    width: 100%;
+    position: relative;
+    background: rgb(181, 241, 112);
+}

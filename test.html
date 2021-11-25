@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -7,112 +7,581 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ParkSejin Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/svg-setting.css">
+
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Fauna One", serif;
-        }
-
-        body,
-        html {
-            height: 100%;
-        }
-
-        .wrapper {
-            width: 100%;
-            height: 100%;
+        .viewport {
             overflow: hidden;
-            perspective: 1000;
-        }
-
-        .section {
+            position: fixed;
             height: 100%;
-            width: calc(300% / 1);
-            float: left;
-            position: relative;
-        }
-
-        .section:nth-child(1) {
-            background: #F64747;
-        }
-
-        .section:nth-child(2) {
-            background: #22A7F0;
-        }
-
-        .section:nth-child(3) {
-            background: #F9690E;
-        }
-
-        .section:nth-child(4) {
-            background: #9B59B6;
-        }
-
-        .section:nth-child(5) {
-            background: #03C9A9;
-        }
-
-        .sections {
             width: 100%;
-            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
 
-        .section__title {
+        .scroll-container {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 30px;
-            color: #fff;
+            overflow: hidden;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper" id="js-wrapper">
-        <div class="sections" id="js-slideContainer">
-            <section class="section">
-                <span class="section__title" id="title1">Section One</span>
-                <span id="trigger--title1"></span>
-            </section>
+    <div class="scroll">0</div>
+
+    <!-- section1 -->
+    <section id="section1">
+        <span class="bg-r"></span>
+        <div class='svg-wrap wrap1'>
+            <!-- left -->
+            <img class='F1-1 s5' src="assets/img/l.svg" alt="F">
+            <img class='R1-1 s5' src="assets/img/l.svg" alt="R">
+            <img class='O1 s5' src="assets/img/O.svg" alt="O">
+            <img class='T1-2 s5' src="assets/img/T1_r.svg" alt="T">
+            <img class='E1-2 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='D1-1 s5' src="assets/img/D1_l.svg" alt="D">
+
+            <!-- right -->
+            <img class='F1-2 s3' src="assets/img/F1_r.svg" alt="F">
+            <img class='R1-2 s5' src="assets/img/R1_r.svg" alt="R">
+            <img class='N1 s5' src="assets/img/N.svg" alt="N">
+            <img class='T1-1 s0' src="assets/img/T1_l.svg" alt="T">
+            <img class='E1-1 s5' src="assets/img/l.svg" alt="E">
+            <img class='N1-2 s5' src="assets/img/N.svg" alt="N">
+            <img class='D1-2 s5' src="assets/img/D1_r.svg" alt="D">
         </div>
-    </div>
+
+        <div class='svg-wrap wrap2'>
+            <!-- left -->
+            <img class='D2 s5' src="assets/img/D.svg" alt="D">
+            <img class='E2-2 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='E2-4 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='L2-2 s0' src="assets/img/L1_r.svg" alt="L">
+            <img class='P2-1 s5' src="assets/img/l.svg" alt="P">
+            <img class='E2-5 s5' src="assets/img/E2_l.svg" alt="E">
+            <img class='R2-2 s5' src="assets/img/R1_r.svg" alt="R">
+
+            <!-- right -->
+            <img class='E2-1 s5' src="assets/img/l.svg" alt="E">
+            <img class='V2 s5' src="assets/img/V.svg" alt="V">
+            <img class='E2-3 s5' src="assets/img/l.svg" alt="E">
+            <img class='L2-1 s5' src="assets/img/l.svg" alt="L">
+            <img class='O2 s5' src="assets/img/O.svg" alt="O">
+            <img class='P2-2 s3' src="assets/img/P1_r.svg" alt="P">
+            <img class='E2-6 s2h' src="assets/img/E2_r.svg" alt="E">
+            <img class='R2-1 s5' src="assets/img/l.svg" alt="R">
+        </div>
+
+        <div class='svg-wrap wrap3'>
+            <!-- left -->
+            <img class='P3-2 s3' src="assets/img/P1_r.svg" alt="P">
+            <img class='A3-1 s1h' src="assets/img/A1_l.svg" alt="A">
+            <img class='R3-1 s5' src="assets/img/l.svg" alt="R">
+            <img class='K3-1 s5' src="assets/img/l.svg" alt="K">
+            <img class='S3 s5' src="assets/img/S.svg" alt="S">
+            <img class='E3-2 s5' src="assets/img/E1_r.svg" alt="E">
+            <img class='I3 s5' src="assets/img/l.svg" alt="I">
+            <img class='N3-2 s5' src="assets/img/N1_r.svg" alt="N">
+
+            <!-- right -->
+            <img class='P3-1 s5' src="assets/img/l.svg" alt="P">
+            <img class='A3-2 s3h' src="assets/img/A1_r.svg" alt="A">
+            <img class='R3-2 s5' src="assets/img/R1_r.svg" alt="R">
+            <img class='K3-2 s5' src="assets/img/K1_r.svg" alt="K">
+            <img class='E3-1 s5' src="assets/img/l.svg" alt="E">
+            <img class='J3 s5' src="assets/img/J.svg" alt="J">
+            <img class='N3-1 s5' src="assets/img/N1_l.svg" alt="N">
+        </div>
+
+        <h2 class="bottom left">portfolio<br>by parksejin</h2>
+        <h2 class="bottom right">frontend<br>developer</h2>
+    </section>
+
+    <!-- section2 -->
+    <section id="section2">
+        <div id="horizontal1">
+            <div class="module">
+                <h2 class="huge-text">Hello! I'm Park Sejin, dreaming of becoming a web frontend.</h2>
+                <h3 class="first-text">안녕하세요! 저는 웹 프론트엔드를 개발자를 꿈꾸는 인재 박세진입니다.</h3>
+                <h3 class="second-text">저는 코딩을 하며 막히는 것의 해답을 찾아 해결하고, 저의 것으로 만드는 것을 좋아합니다. 새로운 기술을 받아 들이는 것에
+                    적극적이며, 새로운
+                    시도를 두려워 하지않는 프론트엔드 개발자가 되겠습니다.</h3>
+                <img class="first-image" src="assets/img/img_01.png" alt="image01">
+                <img class="second-image" src="assets/img/img_02.png" alt="image02">
+            </div>
+        </div>
+    </section>
+
+    <!-- sectrion3 -->
+    <section id="section3">
+        <div class="part">
+            <h2 class="title">skills</h2>
+            <img class="down-img" src="assets/img/down_btn.svg" alt="▼">
+        </div>
+        <div class="part">
+            <div class="left">
+                <h1 class="skill-title">HTML</h1>
+                <h2 class="skill-percent">90%</h2>
+            </div>
+            <div class="right">
+                <p class="skill-desc">웹 표준을 준수합니다.<br>
+                    하드코딩이 가능하며,<br>
+                    크로스 브라우징에 대해 이해하고 있습니다.</p>
+            </div>
+        </div>
+        <div class="part">
+            <div class="left">
+                <p class="skill-desc">각종 속성을 적절하게 사용하고<br>
+                    항상 코드의 재활용에 대해 고민합니다.<br>
+                    SCSS 문법을 사용할 수 있습니다.</p>
+            </div>
+            <div class="right">
+                <h1 class="skill-title">CSS</h1>
+                <h2 class="skill-percent">90%</h2>
+            </div>
+        </div>
+        <div class="part">
+            <div class="left">
+                <h1 class="skill-title">J<span>AVA</span>S<span>CRIPT</span></h1>
+                <h2 class="skill-percent">80%</h2>
+            </div>
+            <div class="right">
+                <p class="skill-desc">웹 사이트에 자주 사용되는 탭메뉴, 레이어 팝업와<br>
+                    같은 요소들을 스크립트를 사용하여 구현 가능하며<br>
+                    항상 다양한 스크립트들을 찾아보려 하고 있습니다.</p>
+            </div>
+        </div>
+        <div class="part">
+            <div class="left">
+                <p class="skill-desc">슬라이드나 갤러리와 같은<br>
+                    플러그인의 옵션을 잘 활용하고<br>
+                    디자인에 맞게 적용 할 수 있습니다.</p>
+            </div>
+            <div class="right">
+                <h1 class="skill-title">JQUERY</h1>
+                <h2 class="skill-percent">80%</h2>
+            </div>
+        </div>
+        <div class="part">
+            <div class="left">
+                <h1 class="skill-title">REACT</h1>
+                <h2 class="skill-percent">70%</h2>
+            </div>
+            <div class="right">
+                <p class="skill-desc">React의 기본 원리부터 이해하려고 노력합니다.<br>
+                    component부터 redux, contextAPI 등<br>
+                    기본적인 개념 및 동작원리를 알고 있습니다.</p>
+            </div>
+        </div>
+        <div class="part">
+            <div class="left">
+                <p class="skill-desc">뷰에 대한 설명입니다.<br>
+                    뷰에 대한 설명입니다.<br>
+                    뷰에 대한 설명입니다.</p>
+            </div>
+            <div class="right">
+                <h1 class="skill-title">VUE</h1>
+                <h2 class="skill-percent">70%</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- section4 -->
+    <section id="section4">
+        <div id="horizontal2">
+            <div class="module">
+                <h1 class="huge-text">Project<span>Project</span>Project<span>Project</span></h2>
+                    <h3 class="first-text">배우고 습득한 기술들을 토대로 웹 표준, 반응형 웹 등의 다양한 유형의 웹 사이트들을 만들어 보았습니다.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- section5 -->
+    <section id="section5">
+        <div class="container">
+            <div class="part left">
+                <div>
+                    <h1 class="alpah">W</h1>
+                    <h2 class="title">WEBSTANDARD</h2>
+                    <p class="desc">웹 표준 지침서를 준수하고 크로스 브라우징 작업을 한 사이트입니다. 모든 사용자가 이용에 불편이 없도록<br>
+                        대체 텍스트로 웹 접근성 또한 고려 하였습니다. 슬라이드, 탭, 메뉴, 팝업, 동영상 기능을 작업 하였으며,<br>
+                        동적인 부분을 더하기 위해 slick.js 와 같은 플러그인을 이용하여 배너와 갤러리에 효과를 주었습니다.<br>
+                        크로스 브라우징은 익스플로러 8버전부터 지원합니다.</p>
+                </div>
+                <div class="left">
+                    <a href="#">CODE VIEW</a>
+                    <a href="#">SITE VIEW</a>
+                </div>
+                <div class="right">
+                    <img src="assets/img/Mockup1.png" alt="WEBSTANDARD">
+                </div>
+            </div>
+            <div class="part right">
+                <div>
+                    <h1 class="alpah">R</h1>
+                    <h2 class="title">RESPONSIVE WEB</h2>
+                    <p class="desc">미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 작업을 진행한 사이트입니다.<br>
+                        웹 표준과 동일한 슬라이드, 탭, 메뉴, 팝업, 동영상 기능 등을 추가해서 작업을 진행 하였습니다.<br>
+                        크로스 브라우징은 익스플로러 8버전부터 지원합니다.</p>
+                </div>
+                <div class="left">
+                    <img src="assets/img/Mockup2.png" alt="WEBSTANDARD">
+                </div>
+                <div class="right">
+                    <a href="#">CODE VIEW</a>
+                    <a href="#">SITE VIEW</a>
+                </div>
+            </div>
+            <div class="part left">
+                <div>
+                    <h1 class="alpah">M</h1>
+                    <h2 class="title">MEGABOX SITE</h2>
+                    <p class="desc">미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 작업을 진행한 메가박스 사이트입니다.<br>
+                        이미지 슬라이더, 탭메뉴, 모달 등 Swiper 플러그인과 다양한 스크립트 요소를 활용하여 작업한 사이트입니다.<br>
+                        크로스 브라우징은 익스플로러 8버전부터 지원합니다.</p>
+                </div>
+                <div class="left">
+                    <a href="#">CODE VIEW</a>
+                    <a href="https://escape1004.github.io/dothome21/megabox/index.html">SITE VIEW</a>
+                </div>
+                <div class="right">
+                    <img src="assets/img/Mockup3.png" alt="WEBSTANDARD">
+                </div>
+            </div>
+            <div class="part right">
+                <div>
+                    <h1 class="alpah">R</h1>
+                    <h2 class="title">REACT WEB</h2>
+                    <p class="desc">React를 배우고 처음으로 적용해본 프로젝트입니다.<br>
+                        재사용 구간은 컴포넌트로 만들었으며, Youtube API를 받아와 사이트에서 검색 했을 때<br>
+                        해당 키워드가 들어간 유튜브 영상 목록이 나타나게 만들었습니다.</p>
+                </div>
+                <div class="left">
+                    <img src="assets/img/Mockup4.png" alt="WEBSTANDARD">
+                </div>
+                <div class="right">
+                    <a href="#">CODE VIEW</a>
+                    <a href="https://reactescape.web.app/">SITE VIEW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section6 -->
+    <section id="section6">
+        <div id="horizontal3">
+            <div class="module">
+                <div class="flex-module">
+                    <h2 class="huge-text">SCRIPT<span>SCRIPT</span>MOUSE<span>EFFECT</span></h2>
+                    <div class="iframe-box">
+                        <iframe class="effect"
+                            src="https://escape1004.github.io/dothome21/refer-effect/mouseEffect/javascriptME07.html"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <h2 class="huge-text">SLIDER<span>EFFECT</span></h2>
+                    <div class="iframe-box">
+                        <iframe class="effect"
+                            src="https://escape1004.github.io/dothome21/refer-effect/sliderEffect/javascriptSE06.html"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <h2 class="huge-text">PARALLAX<span>EFFECT</span></h2>
+                    <div class="iframe-box">
+                        <iframe class="effect"
+                            src="https://escape1004.github.io/dothome21/refer-effect/parallaxEffect/javascriptPE06.html"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <h2 class="huge-text">GAME<span>EFFECT</span></h2>
+                    <div class="iframe-box">
+                        <iframe class="effect"
+                            src="https://escape1004.github.io/dothome21/refer-effect/gameEfect/cardGame.html"
+                            style="overflow-y:hidden" frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section7 -->
+    <section id="section7">
+        <div class="part black">
+            <h1 class="title">ANIMATION</h1>
+        </div>
+        <div class="part-bridge"></div>
+        <div class="left">
+            <h2>A<span>N</span></h2>
+        </div>
+        <div class="container">
+            <div class="right">
+                <div class="part">
+                    <div class="ani-number">01</div>
+                    <div class="ani-title">Bar Animation</div>
+                    <div class="ani-desc">막대기 개체(bar)를 만든 후에 @keyframe을 이용해 %에 따라 height값, width값, rotate값을 변경하여
+                        막대기의 사이즈가 변화하며, 돌아가는 역동적인 애니메이션을 만들었습니다.
+                    </div>
+                    <iframe class="animation" height="450" style="width: 100%;" scrolling="no" title="Bar Animation"
+                        src="https://codepen.io/escape1004/embed/xxrxjLe?default-tab=result&theme-id=dark"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/escape1004/pen/xxrxjLe">
+                            Bar Animation</a> by Escape (<a href="https://codepen.io/escape1004">@escape1004</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </div>
+                <div class="part">
+                    <div class="ani-number">02</div>
+                    <div class="ani-title">Square Animation</div>
+                    <div class="ani-desc">박스 개체(box)와 박스의 그림자에 transrate, scale, rotate를 이용하여 박스는 계속 돌아가며 그림자는
+                        그에 따라
+                        크기가
+                        변화하고, 바닥에 닿는 부분은 눌리듯 보여주는 애니메이션을 만들었습니다.
+                    </div>
+                    <iframe class="animation" height="450" style="width: 100%;" scrolling="no" title="Square Animation"
+                        src="https://codepen.io/escape1004/embed/vYZYjwy?default-tab=result&theme-id=dark"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/escape1004/pen/vYZYjwy">
+                            Square Animation</a> by Escape (<a href="https://codepen.io/escape1004">@escape1004</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </div>
+                <div class="part">
+                    <div class="ani-number">03</div>
+                    <div class="ani-title">Wave Animation</div>
+                    <div class="ani-desc">for문을 이용하여 다수의 동그라미 개체(circle)를 만든 후에 각 개체들에 animation-delay * index
+                        값을 넣어
+                        딜레이를 만들어 주어 각각의 개치들이 파도를 타는 것처럼 사이즈가 변화하는 애니메이션을 만들었습니다.
+                    </div>
+                    <iframe class="animation" height="450" style="width: 100%;" scrolling="no" title="Wave Animation"
+                        src="https://codepen.io/escape1004/embed/VwzNzOQ?default-tab=result&theme-id=dark"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/escape1004/pen/VwzNzOQ">
+                            Wave Animation</a> by Escape (<a href="https://codepen.io/escape1004">@escape1004</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </div>
+                <div class="part">
+                    <div class="ani-number">04</div>
+                    <div class="ani-title">Tail Animation</div>
+                    <div class="ani-desc">다수의 동그라미 개체(circle)를 만든 후 각각의 CSS를 다르게 주었으며, translate 효과로 이동 경로를
+                        만들어주고,
+                        각각
+                        개체에 딜레이를 주어 원이 꼬리를 물며 따라가는 애니메이션을 만들었습니다.
+                    </div>
+                    <iframe class="animation" height="450" style="width: 100%;" scrolling="no" title="Tail Animation"
+                        src="https://codepen.io/escape1004/embed/zYdjQYK?default-tab=result&theme-id=dark"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/escape1004/pen/zYdjQYK">
+                            Tail Animation</a> by Escape (<a href="https://codepen.io/escape1004">@escape1004</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section8 -->
+    <section id="section8">
+        <div class="container">
+            <div class="part">
+                <div class="left">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="right">
+                    <div class="flex-info">
+                        <div class="info">
+                            <h3><span>박세진</span> | PARK SEJIN</h3>
+                            <ul>
+                                <li>E-Mail : parksejin159@gmail.com</li>
+                                <li>Number : 010-8230-8066</li>
+                                <li>GitHub : https://github.com/escape1004</li>
+                            </ul>
+                        </div>
+                        <div class="img">
+                            <img src="assets/img/profile.png" alt="박세진">
+                        </div>
+                    </div>
+                    <div class="mail-form">
+                        <input class="name" type="text" placeholder="Name">
+                        <input class="mail" type="text" placeholder="E-Mail">
+                        <textarea class="message" name="#" id="#" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="send">SEND MAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=542"></script>
-    <script src="assets/script/mainMove.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
     <script>
-        $(function () { // wait for document ready
+        var s = skrollr.init();
 
-            var controller = new ScrollMagic.Controller();
+        gsap.registerPlugin(ScrollTrigger);
+        let horizontal1 = document.getElementById("horizontal1");
+        let horizontal2 = document.getElementById("horizontal2");
+        let horizontal3 = document.getElementById("horizontal3");
 
-            var horizontalSlide = new TimelineMax()
-                // animate panels
-                .to("#js-slideContainer", 1, {
-                    x: "-100%"
-                })
+        gsap.to(horizontal1, {
+            x: () => -(horizontal1.scrollWidth - document.documentElement.clientWidth) + "px",
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontal1,
+                invalidateOnRefresh: true,
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + horizontal1.offsetWidth
+            }
+        })
 
-            // create scene to pin and link animation
-            new ScrollMagic.Scene({
-                    triggerElement: "#js-wrapper",
-                    triggerHook: "onLeave",
-                    duration: "400%"
-                })
-                .setPin("#js-wrapper")
-                .setTween(horizontalSlide)
-                //.addIndicators() // add indicators (requires plugin)
-                .addTo(controller);
+        gsap.to(horizontal2, {
+            x: () => -(horizontal2.scrollWidth - document.documentElement.clientWidth) + "px",
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontal2,
+                invalidateOnRefresh: true,
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + horizontal2.offsetWidth
+            }
+        })
+
+        gsap.to(horizontal3, {
+            x: () => -(horizontal3.scrollWidth - document.documentElement.clientWidth) + "px",
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontal3,
+                invalidateOnRefresh: true,
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + horizontal3.offsetWidth
+            }
+        })
+
+        // function scrollBlock() {
+        //     $('#section1').on('scroll touchmove mousewheel', function (event) {
+        //         event.preventDefault();
+        //         event.stopPropagation();
+        //         return false;
+        //     });
+        // }
+        // scrollBlock();
+
+        // function scrollOn() {
+        //     $('#section1').off('scroll touchmove mousewheel');
+        // }
+
+        // $("#section1").click(function () {
+        //     sec1TitleStart();
+        //     setTimeout(() => {
+        //         toggleEvent = 1;
+        //     }, 5000);
+        // });
+
+        $(window).scroll(function () {
+            let scrollTop = $(window).scrollTop();
+
+            $(".scroll").html(parseInt(scrollTop));
+
+            // if (scrollTop === 0) {
+            //     sec1TitleReturn();
+            //     scrollBlock();
+            // }
+
+            // if (scrollTop >= 1) {
+            //     scrollOn();
+            // }
         });
+
+
+        var html = document.documentElement;
+        var body = document.body;
+
+        var scroller = {
+            target: document.querySelector("#scroll-container"),
+            ease: 0.05, // <= scroll speed
+            endY: 0,
+            y: 0,
+            resizeRequest: 1,
+            scrollRequest: 0,
+        };
+
+        var requestId = null;
+
+        TweenLite.set(scroller.target, {
+            rotation: 0.01,
+            force3D: true
+        });
+
+        window.addEventListener("load", onLoad);
+
+        function onLoad() {
+            updateScroller();
+            window.focus();
+            window.addEventListener("resize", onResize);
+            document.addEventListener("scroll", onScroll);
+        }
+
+        function updateScroller() {
+
+            var resized = scroller.resizeRequest > 0;
+
+            if (resized) {
+                var height = scroller.target.clientHeight;
+                body.style.height = height + "px";
+                scroller.resizeRequest = 0;
+            }
+
+            var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+
+            scroller.endY = scrollY;
+            scroller.y += (scrollY - scroller.y) * scroller.ease;
+
+            if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+                scroller.y = scrollY;
+                scroller.scrollRequest = 0;
+            }
+
+            TweenLite.set(scroller.target, {
+                y: -scroller.y
+            });
+
+            requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+        }
+
+        function onScroll() {
+            scroller.scrollRequest++;
+            if (!requestId) {
+                requestId = requestAnimationFrame(updateScroller);
+            }
+        }
+
+        function onResize() {
+            scroller.resizeRequest++;
+            if (!requestId) {
+                requestId = requestAnimationFrame(updateScroller);
+            }
+        }
     </script>
 </body>
 
