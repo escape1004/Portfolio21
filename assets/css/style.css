@@ -20,16 +20,16 @@ body {
     margin: 0 auto;
 }
 
-::selection{ 
-    color: transparent; 
-    text-shadow: 0 0 5px rgb(255, 255, 255); 
-    transition: all 250ms ease-in; 
+::selection {
+    color: transparent;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: all 250ms ease-in;
 }
 
-::-moz-selection{ 
-    color: transparent; 
-    text-shadow: 0 0 5px rgb(255, 255, 255); 
-    transition: all 250ms ease-in; 
+::-moz-selection {
+    color: transparent;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: all 250ms ease-in;
 }
 
 .fixed {
@@ -91,7 +91,7 @@ body {
 
 #section1 .svg-wrap img {
     position: fixed;
-    transition: left .8s cubic-bezier(.69,.33,.22,1.33), right .8s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition: left .8s cubic-bezier(.69, .33, .22, 1.33), right .8s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 #section1 .bottom {
@@ -191,7 +191,7 @@ body {
     z-index: -1;
 }
 
-/* section31 */
+/* section3 */
 #section3 {
     z-index: 9810;
     height: 16000px;
