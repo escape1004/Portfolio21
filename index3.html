@@ -531,13 +531,22 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 
 	<script>
-		var s = skrollr.init();
+		var s = skrollr.init({
+			mobileCheck: function () {
+				return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor ||
+					window.opera);
+			}
+		});
 
 		function scrollProgress() {
 			let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset);
+			// 퍼센트 표시
+			// let scrollTop = Math.floor(($(window).scrollTop() / ($(document).height() - $(window).height())) * 100);
 			document.querySelector(".scroll").innerText = parseInt(scrollTop);
 		};
 		window.addEventListener("scroll", scrollProgress);
+
+
 
 		gsap.registerPlugin(ScrollTrigger);
 
