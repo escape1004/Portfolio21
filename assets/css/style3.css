@@ -977,6 +977,12 @@ body {
     position: relative;
 }
 
+#section7 .module {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
 #section7 .part {
     height: 100vh;
     width: 100%;
@@ -989,6 +995,7 @@ body {
 #section7 .part.black {
     background-color: #000;
     margin-top: 0;
+    height: 20000px;
 }
 
 #section7 .title {
@@ -1000,6 +1007,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    word-spacing: -20px;
+}
+
+#section7 .title span {
+    display: inline-block;
 }
 
 #section7 .part-bridge {
@@ -1056,6 +1069,10 @@ body {
     margin-bottom: 20px;
     margin-top: -50px;
     line-height: 2vw;
+}
+
+#section7 .animation {
+    height: 50vh;
 }
 
 /* seciton8 */
