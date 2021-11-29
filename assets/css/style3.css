@@ -47,7 +47,7 @@ body {
 /* section1 */
 #section1 {
     width: 100%;
-    height: 1200vh;
+    height: 1400vh;
     position: relative;
 }
 
@@ -689,17 +689,18 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    gap: 3vw;
 }
 
 #section3 .part .left {
-    width: 49%;
+    flex: 0 0 50%;
     height: 100%;
     position: relative;
     display: inline-block;
 }
 
 #section3 .part .right {
-    width: 49%;
+    flex: 0 0 50%;
     height: 100%;
     position: relative;
     display: inline-block;
@@ -725,6 +726,7 @@ body {
 }
 
 #section3 .skill-title {
+    width: auto;
     font-family: "Teko";
     position: absolute;
     top: 40%;
@@ -733,7 +735,7 @@ body {
     font-weight: 500;
     color: #000;
     -webkit-text-stroke: 2px white;
-    letter-spacing: -8px;
+    letter-spacing: -0.1vw;
 }
 
 #section3 .skill-title span {
@@ -774,16 +776,12 @@ body {
     text-align: right;
 }
 
-#section3 .right .skill-title {
-    left: 0;
+#section3 .skill-title.js {
+    left: 100px;
 }
 
-#section3 .right .skill-percent {
-    left: 0;
-}
-
-#section3 .right .skill-desc {
-    left: 0;
+#section3 .skill-title.jq {
+    right: 100px;
 }
 
 /* seciton4 */
