@@ -51,13 +51,13 @@ body {
     position: relative;
 }
 
-.section1.desc2 {
+#section3_bridge {
     width: 100%;
     height: 3000px !important;
     position: relative;
 }
 
-#section1 .sec1-cont {
+.section1 .sec1-cont {
     width: 100%;
     height: 100vh;
     position: sticky;
@@ -65,8 +65,8 @@ body {
     overflow: hidden;
 }
 
-#section1 .text-wrap .left,
-#section1 .text-wrap .right {
+.section1 .text-wrap .left,
+.section1 .text-wrap .right {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -80,38 +80,38 @@ body {
     overflow: hidden;
 }
 
-#section1 .text-wrap .left {
+.section1 .text-wrap .left {
     background-color: #000;
     left: 0;
 }
 
-#section1 .text-wrap .right {
+.section1 .text-wrap .right {
     background-color: #e00020;
     right: 0;
 }
 
-#section1 .text-wrap .left .texts,
-#section1 .text-wrap .right .texts {
+.section1 .text-wrap .left .texts,
+.section1 .text-wrap .right .texts {
     font-family: 'Raleway';
     font-size: 6vw;
     text-align: center;
     display: flex;
 }
 
-#section1 .text-wrap .left .texts {
+.section1 .text-wrap .left .texts {
     font-weight: 900;
 }
 
-#section1 .text-wrap .right .texts {
+.section1 .text-wrap .right .texts {
     font-weight: 100;
 }
 
 /* left-text-a */
-#section1 .left .a-1 {
+.section1 .left .a-1 {
     position: relative;
 }
 
-#section1 .left .a-1 .a-1blind {
+.section1 .left .a-1 .a-1blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -120,11 +120,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-2 {
+.section1 .left .a-2 {
     position: relative;
 }
 
-#section1 .left .a-2 .a-2blind {
+.section1 .left .a-2 .a-2blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -133,11 +133,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-3 {
+.section1 .left .a-3 {
     position: relative;
 }
 
-#section1 .left .a-3 .a-3blind {
+.section1 .left .a-3 .a-3blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -146,11 +146,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-4 {
+.section1 .left .a-4 {
     position: relative;
 }
 
-#section1 .left .a-4 .a-4blind {
+.section1 .left .a-4 .a-4blind {
     position: absolute;
     left: 0;
     top: 0;
@@ -159,11 +159,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-5 {
+.section1 .left .a-5 {
     position: relative;
 }
 
-#section1 .left .a-5 .a-5blind {
+.section1 .left .a-5 .a-5blind {
     position: absolute;
     left: 0;
     top: 0;
@@ -172,7 +172,7 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-5 .a-5blind2 {
+.section1 .left .a-5 .a-5blind2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -181,11 +181,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-6 {
+.section1 .left .a-6 {
     position: relative;
 }
 
-#section1 .left .a-6 .a-6blind {
+.section1 .left .a-6 .a-6blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -194,11 +194,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-7 {
+.section1 .left .a-7 {
     position: relative;
 }
 
-#section1 .left .a-7 .a-7blind {
+.section1 .left .a-7 .a-7blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -207,11 +207,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .a-8 {
+.section1 .left .a-8 {
     position: relative;
 }
 
-#section1 .left .a-8 .a-8blind {
+.section1 .left .a-8 .a-8blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -221,11 +221,11 @@ body {
 }
 
 /* left-text-b */
-#section1 .left .b-1 {
+.section1 .left .b-1 {
     position: relative;
 }
 
-#section1 .left .b-1 .b-1blind {
+.section1 .left .b-1 .b-1blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -234,11 +234,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-2 {
+.section1 .left .b-2 {
     position: relative;
 }
 
-#section1 .left .b-2 .b-2blind {
+.section1 .left .b-2 .b-2blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -247,11 +247,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-3 {
+.section1 .left .b-3 {
     position: relative;
 }
 
-#section1 .left .b-3 .b-3blind {
+.section1 .left .b-3 .b-3blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -260,11 +260,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-4 {
+.section1 .left .b-4 {
     position: relative;
 }
 
-#section1 .left .b-4 .b-4blind {
+.section1 .left .b-4 .b-4blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -273,7 +273,7 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-4 .b-4blind2 {
+.section1 .left .b-4 .b-4blind2 {
     position: absolute;
     left: 0;
     top: 0;
@@ -282,11 +282,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-5 {
+.section1 .left .b-5 {
     position: relative;
 }
 
-#section1 .left .b-5 .b-5blind {
+.section1 .left .b-5 .b-5blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -295,11 +295,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-6 {
+.section1 .left .b-6 {
     position: relative;
 }
 
-#section1 .left .b-6 .b-6blind {
+.section1 .left .b-6 .b-6blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -308,11 +308,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-7 {
+.section1 .left .b-7 {
     position: relative;
 }
 
-#section1 .left .b-7 .b-7blind {
+.section1 .left .b-7 .b-7blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -321,11 +321,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-8 {
+.section1 .left .b-8 {
     position: relative;
 }
 
-#section1 .left .b-8 .b-8blind {
+.section1 .left .b-8 .b-8blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -334,11 +334,11 @@ body {
     background-color: #000;
 }
 
-#section1 .left .b-9 {
+.section1 .left .b-9 {
     position: relative;
 }
 
-#section1 .left .b-9 .b-9blind {
+.section1 .left .b-9 .b-9blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -348,11 +348,11 @@ body {
 }
 
 /* right-text-a */
-#section1 .right .a-1 {
+.section1 .right .a-1 {
     position: relative;
 }
 
-#section1 .right .a-1 .a-1blind {
+.section1 .right .a-1 .a-1blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -361,11 +361,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-2 {
+.section1 .right .a-2 {
     position: relative;
 }
 
-#section1 .right .a-2 .a-2blind {
+.section1 .right .a-2 .a-2blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -374,11 +374,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-3 {
+.section1 .right .a-3 {
     position: relative;
 }
 
-#section1 .right .a-3 .a-3blind {
+.section1 .right .a-3 .a-3blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -387,11 +387,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-4 {
+.section1 .right .a-4 {
     position: relative;
 }
 
-#section1 .right .a-4 .a-4blind {
+.section1 .right .a-4 .a-4blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -400,11 +400,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-5 {
+.section1 .right .a-5 {
     position: relative;
 }
 
-#section1 .right .a-5 .a-5blind {
+.section1 .right .a-5 .a-5blind {
     position: absolute;
     left: 0;
     top: 0;
@@ -413,7 +413,7 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-5 .a-5blind2 {
+.section1 .right .a-5 .a-5blind2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -422,11 +422,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-6 {
+.section1 .right .a-6 {
     position: relative;
 }
 
-#section1 .right .a-6 .a-6blind {
+.section1 .right .a-6 .a-6blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -435,11 +435,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-7 {
+.section1 .right .a-7 {
     position: relative;
 }
 
-#section1 .right .a-7 .a-7blind {
+.section1 .right .a-7 .a-7blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -448,11 +448,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .a-8 {
+.section1 .right .a-8 {
     position: relative;
 }
 
-#section1 .right .a-8 .a-8blind {
+.section1 .right .a-8 .a-8blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -462,11 +462,11 @@ body {
 }
 
 /* right-text-b */
-#section1 .right .b-1 {
+.section1 .right .b-1 {
     position: relative;
 }
 
-#section1 .right .b-1 .b-1blind {
+.section1 .right .b-1 .b-1blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -475,11 +475,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-2 {
+.section1 .right .b-2 {
     position: relative;
 }
 
-#section1 .right .b-2 .b-2blind {
+.section1 .right .b-2 .b-2blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -488,11 +488,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-3 {
+.section1 .right .b-3 {
     position: relative;
 }
 
-#section1 .right .b-3 .b-3blind {
+.section1 .right .b-3 .b-3blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -501,11 +501,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-4 {
+.section1 .right .b-4 {
     position: relative;
 }
 
-#section1 .right .b-4 .b-4blind {
+.section1 .right .b-4 .b-4blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -514,11 +514,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-5 {
+.section1 .right .b-5 {
     position: relative;
 }
 
-#section1 .right .b-5 .b-5blind {
+.section1 .right .b-5 .b-5blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -527,11 +527,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-6 {
+.section1 .right .b-6 {
     position: relative;
 }
 
-#section1 .right .b-6 .b-6blind {
+.section1 .right .b-6 .b-6blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -540,11 +540,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-7 {
+.section1 .right .b-7 {
     position: relative;
 }
 
-#section1 .right .b-7 .b-7blind {
+.section1 .right .b-7 .b-7blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -553,11 +553,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-8 {
+.section1 .right .b-8 {
     position: relative;
 }
 
-#section1 .right .b-8 .b-8blind {
+.section1 .right .b-8 .b-8blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -566,11 +566,11 @@ body {
     background-color: #e00020;
 }
 
-#section1 .right .b-9 {
+.section1 .right .b-9 {
     position: relative;
 }
 
-#section1 .right .b-9 .b-9blind {
+.section1 .right .b-9 .b-9blind {
     position: absolute;
     right: 0;
     top: 0;
@@ -579,7 +579,7 @@ body {
     background-color: #e00020;
 }
 
-#section1 .left .bottom {
+.section1 .left .bottom {
     font-family: 'Raleway';
     font-size: 1vw;
     font-weight: 200;
@@ -589,7 +589,7 @@ body {
     white-space: nowrap;
 }
 
-#section1 .right .bottom {
+.section1 .right .bottom {
     font-family: 'Raleway';
     font-size: 1vw;
     font-weight: 200;
@@ -602,7 +602,7 @@ body {
 
 /* section2 */
 #horizontal1 {
-    width: 800vw;
+    width: auto;
     height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
@@ -665,6 +665,7 @@ body {
     top: 75%;
     transform: translateY(-75%);
     z-index: -1;
+    opacity: 0;
 }
 
 #section2 .second-image {
