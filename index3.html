@@ -602,15 +602,16 @@
 			}
 		})
 
-		gsap.from('.first-image', {
-			duration: 1,
-			opacity: 1,
+		gsap.to(".first-image", {
 			scrollTrigger: {
-				trigger: '.first-image',
-				// markers: true,
-				start: 'top 80%',
-				end: 'bottom 20%',
-				toggleActions: 'play reverse none reverse'
+				trigger: ".first-image",
+				scrub: true,
+				pin: true,
+				start: "center center",
+				end: "bottom -100%",
+				// toggleClass: "active",
+				ease: "power2",
+				opacity: "1",
 			}
 		});
 	</script>

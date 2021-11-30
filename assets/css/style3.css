@@ -602,7 +602,7 @@ body {
 
 /* section2 */
 #horizontal1 {
-    width: auto;
+    width: 800vw;
     height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
@@ -615,12 +615,12 @@ body {
     background-attachment: fixed;
     color: #fff;
     position: relative;
+    padding: 0 100vw;
 }
 
 #section2 .module {
     position: absolute;
     width: 100%;
-    margin: 0 100vw;
 }
 
 #section2 .huge-text {
@@ -665,7 +665,11 @@ body {
     top: 75%;
     transform: translateY(-75%);
     z-index: -1;
-    opacity: 0;
+    /* opacity: 0; */
+}
+
+#section2 .first-image.active {
+    opacity: 1;
 }
 
 #section2 .second-image {
