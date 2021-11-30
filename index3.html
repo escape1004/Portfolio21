@@ -419,7 +419,7 @@
 	</section>
 
 	<!-- section7 -->
-	<section id="section7">
+	<!-- <section id="section7">
 		<div class="part black">
 			<div class="module">
 				<h1 class="title">
@@ -501,7 +501,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- section8 -->
 	<section id="section8">
@@ -556,8 +556,8 @@
 			// let scrollTop = Math.floor(($(window).scrollTop() / ($(document).height() - $(window).height())) * 100);
 			document.querySelector(".scroll").innerText = parseInt(scrollTop);
 		};
-		window.addEventListener("scroll", scrollProgress);
 
+		window.addEventListener("scroll", scrollProgress);
 
 
 		gsap.registerPlugin(ScrollTrigger);
@@ -601,6 +601,19 @@
 				end: () => "+=" + horizontal3.offsetWidth
 			}
 		})
+
+		gsap.from('.first-image', {
+			x: 600,
+			duration: 1,
+			opacity: 0,	
+			scrollTrigger: {
+				trigger: '.first-image',
+				markers: true,
+				start: 'top 80%',
+				end: 'bottom 20%',
+				toggleActions: 'play reverse none reverse'
+			}
+		});
 	</script>
 </body>
 
