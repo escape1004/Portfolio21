@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 li {
@@ -14,6 +15,10 @@ li {
 
 body {
     overflow-x: hidden;
+}
+
+.container {
+    padding: 0 100px;
 }
 
 .scroll {
@@ -42,11 +47,17 @@ body {
 /* section1 */
 #section1 {
     width: 100%;
-    height: 1200vh;
+    height: 11000px;
     position: relative;
 }
 
-#section1 .sec1-cont {
+#section3_bridge {
+    width: 100%;
+    height: 3000px !important;
+    position: relative;
+}
+
+.section1 .sec1-cont {
     width: 100%;
     height: 100vh;
     position: sticky;
@@ -54,8 +65,12 @@ body {
     overflow: hidden;
 }
 
-#section1 .text-wrap .left,
-#section1 .text-wrap .right {
+.section1 .text-wrap .texts span {
+    transition: all 1s;
+}
+
+.section1 .text-wrap .left,
+.section1 .text-wrap .right {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -69,552 +84,324 @@ body {
     overflow: hidden;
 }
 
-#section1 .text-wrap .left {
+.section1 .text-wrap .left {
     background-color: #000;
     left: 0;
 }
 
-#section1 .text-wrap .right {
+.section1 .text-wrap .right {
     background-color: #e00020;
     right: 0;
 }
 
-#section1 .text-wrap .left .texts,
-#section1 .text-wrap .right .texts {
+.section1 .text-wrap .left .texts,
+.section1 .text-wrap .right .texts {
     font-family: 'Raleway';
     font-size: 6vw;
     text-align: center;
     display: flex;
 }
 
-#section1 .text-wrap .left .texts {
+.section1 .text-wrap .left .texts {
     font-weight: 900;
 }
 
-#section1 .text-wrap .right .texts {
+.section1 .text-wrap .right .texts {
     font-weight: 100;
 }
 
-/* left-text-a */
-#section1 .left .a-1 {
+.section1 .text-wrap .texts>span {
     position: relative;
 }
 
-#section1 .left .a-1 .a-1blind {
+/* left-text-a */
+.section1 .left span>.blind,
+.section1 .left span>.blind2 {
     position: absolute;
+    height: 100%;
+    background-color: #000;
+}
+
+.section1 .left .a-1 .blind {
     right: 0;
     top: 0;
     width: 1.85vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-2 {
-    position: relative;
-}
-
-#section1 .left .a-2 .a-2blind {
-    position: absolute;
+.section1 .left .a-2 .blind {
     right: 0;
     top: 0;
     width: 2.52vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-3 {
-    position: relative;
-}
-
-#section1 .left .a-3 .a-3blind {
-    position: absolute;
+.section1 .left .a-3 .blind {
     right: 0;
     top: 0;
-    width: 5vw;
-    height: 100%;
-    background-color: #000;
+    width: 4.5vw;
 }
 
-#section1 .left .a-4 {
-    position: relative;
-}
-
-#section1 .left .a-4 .a-4blind {
-    position: absolute;
+.section1 .left .a-4 .blind {
     left: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-5 {
-    position: relative;
-}
-
-#section1 .left .a-5 .a-5blind {
-    position: absolute;
+.section1 .left .a-5 .blind {
     left: 0;
     top: 0;
     width: 1.3vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-5 .a-5blind2 {
-    position: absolute;
+.section1 .left .a-5 .blind2 {
     right: 0;
     top: 0;
     width: 1.3vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-6 {
-    position: relative;
-}
-
-#section1 .left .a-6 .a-6blind {
-    position: absolute;
+.section1 .left .a-6 .blind {
     right: 0;
     top: 0;
     width: 2.1vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-7 {
-    position: relative;
-}
-
-#section1 .left .a-7 .a-7blind {
-    position: absolute;
+.section1 .left .a-7 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .a-8 {
-    position: relative;
-}
-
-#section1 .left .a-8 .a-8blind {
-    position: absolute;
+.section1 .left .a-8 .blind {
     right: 0;
     top: 0;
     width: 2.8vw;
-    height: 100%;
-    background-color: #000;
 }
 
 /* left-text-b */
-#section1 .left .b-1 {
-    position: relative;
-}
-
-#section1 .left .b-1 .b-1blind {
-    position: absolute;
+.section1 .left .b-1 .blind {
     right: 0;
     top: 0;
     width: 2.8vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-2 {
-    position: relative;
-}
-
-#section1 .left .b-2 .b-2blind {
-    position: absolute;
+.section1 .left .b-2 .blind {
     right: 0;
     top: 0;
     width: 2.1vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-3 {
-    position: relative;
-}
-
-#section1 .left .b-3 .b-3blind {
-    position: absolute;
+.section1 .left .b-3 .blind {
     right: 0;
     top: 0;
     width: 4.1vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-4 {
-    position: relative;
-}
-
-#section1 .left .b-4 .b-4blind {
-    position: absolute;
+.section1 .left .b-4 .blind {
     right: 0;
     top: 0;
     width: 2.1vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-4 .b-4blind2 {
-    position: absolute;
+.section1 .left .b-4 .blind2 {
     left: 0;
     top: 0;
     width: 0.1vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-5 {
-    position: relative;
-}
-
-#section1 .left .b-5 .b-5blind {
-    position: absolute;
+.section1 .left .b-5 .blind {
     right: 0;
     top: 0;
     width: 2vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-6 {
-    position: relative;
-}
-
-#section1 .left .b-6 .b-6blind {
-    position: absolute;
+.section1 .left .b-6 .blind {
     right: 0;
     top: 0;
     width: 4.6vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-7 {
-    position: relative;
-}
-
-#section1 .left .b-7 .b-7blind {
-    position: absolute;
+.section1 .left .b-7 .blind {
     right: 0;
     top: 0;
     width: 2.3vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-8 {
-    position: relative;
-}
-
-#section1 .left .b-8 .b-8blind {
-    position: absolute;
+.section1 .left .b-8 .blind {
     right: 0;
     top: 0;
     width: 2.1vw;
-    height: 100%;
-    background-color: #000;
 }
 
-#section1 .left .b-9 {
-    position: relative;
-}
-
-#section1 .left .b-9 .b-9blind {
-    position: absolute;
+.section1 .left .b-9 .blind {
     right: 0;
     top: 0;
     width: 2.6vw;
-    height: 100%;
-    background-color: #000;
 }
 
 /* right-text-a */
-#section1 .right .a-1 {
-    position: relative;
-}
-
-#section1 .right .a-1 .a-1blind {
+.section1 .right span>.blind,
+.section1 .right span>.blind2 {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 4vw;
     height: 100%;
     background-color: #e00020;
 }
 
-#section1 .right .a-2 {
-    position: relative;
+.section1 .right .a-1 .blind {
+    right: 0;
+    top: 0;
+    width: 4vw;
 }
 
-#section1 .right .a-2 .a-2blind {
-    position: absolute;
+.section1 .right .a-2 .blind {
     right: 0;
     top: 0;
     width: 3.15vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-3 {
-    position: relative;
-}
-
-#section1 .right .a-3 .a-3blind {
-    position: absolute;
+.section1 .right .a-3 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-4 {
-    position: relative;
-}
-
-#section1 .right .a-4 .a-4blind {
-    position: absolute;
+.section1 .right .a-4 .blind {
     right: 0;
     top: 0;
     width: 4vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-5 {
-    position: relative;
-}
-
-#section1 .right .a-5 .a-5blind {
-    position: absolute;
+.section1 .right .a-5 .blind {
     left: 0;
     top: 0;
     width: 1.75vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-5 .a-5blind2 {
-    position: absolute;
+.section1 .right .a-5 .blind2 {
     right: 0;
     top: 0;
     width: 1.75vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-6 {
-    position: relative;
-}
-
-#section1 .right .a-6 .a-6blind {
-    position: absolute;
+.section1 .right .a-6 .blind {
     right: 0;
     top: 0;
     width: 0vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-7 {
-    position: relative;
-}
-
-#section1 .right .a-7 .a-7blind {
-    position: absolute;
+.section1 .right .a-7 .blind {
     right: 0;
     top: 0;
     width: 4.1vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .a-8 {
-    position: relative;
-}
-
-#section1 .right .a-8 .a-8blind {
-    position: absolute;
+.section1 .right .a-8 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
 /* right-text-b */
-#section1 .right .b-1 {
-    position: relative;
-}
-
-#section1 .right .b-1 .b-1blind {
-    position: absolute;
+.section1 .right .b-1 .blind {
     right: 0;
     top: 0;
     width: 3.6vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-2 {
-    position: relative;
-}
-
-#section1 .right .b-2 .b-2blind {
-    position: absolute;
+.section1 .right .b-2 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-3 {
-    position: relative;
-}
-
-#section1 .right .b-3 .b-3blind {
-    position: absolute;
+.section1 .right .b-3 .blind {
     right: 0;
     top: 0;
     width: 4vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-4 {
-    position: relative;
-}
-
-#section1 .right .b-4 .b-4blind {
-    position: absolute;
+.section1 .right .b-4 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-5 {
-    position: relative;
-}
-
-#section1 .right .b-5 .b-5blind {
-    position: absolute;
+.section1 .right .b-5 .blind {
     right: 0;
     top: 0;
     width: 2.8vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-6 {
-    position: relative;
-}
-
-#section1 .right .b-6 .b-6blind {
-    position: absolute;
+.section1 .right .b-6 .blind {
     right: 0;
     top: 0;
     width: 4.6vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-7 {
-    position: relative;
-}
-
-#section1 .right .b-7 .b-7blind {
-    position: absolute;
+.section1 .right .b-7 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-8 {
-    position: relative;
-}
-
-#section1 .right .b-8 .b-8blind {
-    position: absolute;
+.section1 .right .b-8 .blind {
     right: 0;
     top: 0;
     width: 3vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-#section1 .right .b-9 {
-    position: relative;
-}
-
-#section1 .right .b-9 .b-9blind {
-    position: absolute;
+.section1 .right .b-9 .blind {
     right: 0;
     top: 0;
     width: 3.15vw;
-    height: 100%;
-    background-color: #e00020;
 }
 
-/* bottom */
-#section1 .left .bottom {
+.section1 .left .bottom {
+    font-family: 'Raleway';
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 200;
     position: absolute;
     left: 20px;
     bottom: 20px;
     white-space: nowrap;
 }
 
-#section1 .right .bottom {
+.section1 .right .bottom {
+    font-family: 'Raleway';
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 200;
     position: absolute;
     right: 20px;
     bottom: 20px;
     white-space: nowrap;
+    text-align: right;
 }
 
 /* section2 */
 #horizontal1 {
-    width: 1000vw;
+    width: 800vw;
     height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 #section2 {
-    height: 12000px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
     position: relative;
+    padding: 0 100vw;
 }
 
 #section2 .module {
     position: absolute;
     width: 100%;
-    margin: 0 100vw;
 }
 
 #section2 .huge-text {
     font-family: 'Raleway';
     font-size: 20vw;
-    font-weight: 500;
+    font-weight: 700;
     position: absolute;
     left: 0;
     top: 30%;
@@ -653,6 +440,11 @@ body {
     top: 75%;
     transform: translateY(-75%);
     z-index: -1;
+    /* opacity: 0; */
+}
+
+#section2 .first-image.active {
+    opacity: 1;
 }
 
 #section2 .second-image {
@@ -662,4 +454,561 @@ body {
     top: 8%;
     transform: translateY(-8%);
     z-index: -1;
+}
+
+/* section3 */
+#section3 {
+    height: 700vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+#section3 .part {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+#section3 .part .left {
+    flex: 0 0 50%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#section3 .part .right {
+    flex: 0 0 50%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#section3 .title {
+    font-size: 12vw;
+    font-family: "Raleway";
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section3 .down-img {
+    width: 1.5vw;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#section3 .skill-title {
+    width: auto;
+    font-family: "Teko";
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 22vw;
+    font-weight: 500;
+    color: #000;
+    -webkit-text-stroke: 2px white;
+    letter-spacing: -0.1vw;
+}
+
+#section3 .skill-title span {
+    font-size: 14vw;
+}
+
+#section3 .skill-percent {
+    font-family: 'Teko';
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 12vw;
+    font-weight: 500;
+    color: #000;
+    -webkit-text-stroke: 2px white;
+    letter-spacing: -8px;
+}
+
+#section3 .skill-desc {
+    font-family: 'Elice DigitalBaeum';
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#section3 .left .skill-title {
+    right: 0;
+}
+
+#section3 .left .skill-percent {
+    right: 0;
+}
+
+#section3 .left .skill-desc {
+    right: 0;
+    text-align: right;
+}
+
+#section3 .skill-title.js {
+    left: 100px;
+}
+
+#section3 .skill-title.jq {
+    right: 100px;
+}
+
+/* seciton4 */
+#horizontal2 {
+    width: 600vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+#section4 .module {
+    position: absolute;
+    left: 100vw;
+    width: calc(100% - 200vw);
+}
+
+#section4 .huge-text {
+    font-family: 'Raleway';
+    font-size: 20vw;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-25%);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#section4 .huge-text span {
+    color: transparent;
+    -webkit-text-stroke: 5px white;
+}
+
+#section4 .first-text {
+    font-family: 'EliceDigitalBaeum_Regular';
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    transform: translateY(-70%);
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* seciton5 */
+#section5 {
+    height: 800vh;
+    background-color: #fff;
+}
+
+#section5 .part {
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+#section5 .alpah {
+    font-family: 'Raleway';
+    font-size: 30vw;
+    font-weight: 700;
+}
+
+#section5 .title {
+    font-family: 'Raleway';
+    font-size: 5vw;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#section5 .desc {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 1.1vw;
+    width: 60vw;
+    line-height: 2vw;
+}
+
+#section5 a {
+    width: 11vw;
+    font-family: 'Raleway';
+    font-size: 1.vw;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    transform: translateY(50px);
+    transition: all .3s;
+    /* white-space: nowrap; */
+}
+
+#section5 a:first-child {
+    margin-right: 5px;
+}
+
+#section5 a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+#section5 img {
+    width: 50vw;
+    display: inline-block;
+}
+
+#section5 .left {
+    float: left;
+}
+
+#section5 .right {
+    float: right;
+}
+
+#section5 .part.right .alpah {
+    text-align: right;
+    color: #CE2F2D;
+}
+
+#section5 .part.right .title {
+    text-align: right;
+    color: #CE2F2D;
+}
+
+#section5 .part.right .desc {
+    text-align: right;
+    margin-left: auto;
+}
+
+/* section6 */
+#horizontal3 {
+    width: 1300vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#section6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+#section6 .module {
+    position: absolute;
+    left: 100vw;
+    width: calc(100% - 200vw);
+}
+
+#section6 .huge-text {
+    font-family: 'Raleway';
+    font-size: 20vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#section6 .huge-text span {
+    color: transparent;
+    -webkit-text-stroke: 5px white;
+}
+
+#section6 .flex-module {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+#section6 .iframe-box {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    margin: 0 20px;
+}
+
+#section6 .iframe-box .effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* seciton7 */
+#section7 {
+    height: 700vh;
+    background-color: #fff;
+    position: relative;
+}
+
+#section7 .module {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+#section7 .part {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 25vh;
+}
+
+#section7 .part.black {
+    background-color: #000;
+    margin-top: 0;
+    height: 20000px;
+}
+
+#section7 .title {
+    font-family: 'Raleway';
+    font-size: 10vw;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    word-spacing: -20px;
+}
+
+#section7 .title span {
+    display: inline-block;
+}
+
+#section7 .part-bridge {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to bottom, black, white);
+}
+
+#section7 .left {
+    width: 50%;
+    height: calc(100% - 200vh);
+    float: left;
+    padding-left: 100px;
+}
+
+#section7 .left h2 {
+    color: #CE2F2D;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 20vw;
+    position: sticky;
+    top: 65vh;
+    line-height: 0.71;
+}
+
+#section7 .left h2 span {
+    font-size: 16vw;
+}
+
+#section7 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#section7 .ani-number {
+    font-family: 'Teko';
+    font-size: 14vw;
+    color: #eee;
+    display: inline-block;
+}
+
+#section7 .ani-title {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 2vw;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#section7 .ani-desc {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 1.3vw;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    line-height: 2vw;
+}
+
+#section7 .animation {
+    height: 50vh;
+}
+
+/* seciton8 */
+#section8 {
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#section8 .left {
+    width: 50%;
+    height: 100%;
+}
+
+#section8 .left h2 {
+    font-family: 'Raleway';
+    font-size: 8vw;
+    font-weight: 700;
+    color: #E00120;
+    position: absolute;
+    bottom: 50px;
+}
+
+#section8 .part {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#section8 .right {
+    font-family: 'Raleway';
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#section8 .right .flex-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+#section8 .right .info {
+    border-bottom: 1px solid #eee;
+}
+
+#section8 .right .info h3 {
+    margin-bottom: 15px;
+    font-size: 1.5vw;
+}
+
+#section8 .right .info h3 span {
+    font-family: 'Elice DigitalBaeum';
+}
+
+#section8 .right .info ul li {
+    margin-bottom: 10px;
+}
+
+#section8 .right .img {
+    margin-left: auto;
+}
+
+#section8 .right img {
+    width: 10vw;
+}
+
+#section8 .right .mail-form {
+    position: absolute;
+    bottom: 70px;
+}
+
+#section8 .right .name {
+    font-family: 'Raleway';
+    font-weight: 300;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#section8 .right .mail {
+    font-family: 'Raleway';
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#section8 .right .message {
+    font-family: 'Raleway';
+    width: 100%;
+    margin-bottom: 15px;
+    resize: none;
+    padding: 10px;
+}
+
+#section8 .right .send {
+    font-family: 'Raleway';
+    font-weight: 300;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.water-fill {
+    animation: wave 0.7s infinite linear,
+        fill-up 10s infinite ease-out alternate;
+}
+
+@keyframes wave {
+    0% {
+        x: -400px;
+    }
+
+    100% {
+        x: 0;
+    }
+}
+
+
+@keyframes fill-up {
+    0% {
+        height: 0;
+        y: 130px;
+    }
+
+    100% {
+        height: 160px;
+        y: -30px;
+    }
 }
