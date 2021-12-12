@@ -214,4 +214,30 @@ window.addEventListener("scroll", function () {
     } else {
         document.querySelector(".section1 .right .b-9 .blind").style.opacity = "1";
     }
+
+    // bottom
+    if (scrollTop >= 7500) {
+        document.querySelector(".section1 .left .bottom").style.opacity = "1";
+    } else {
+        document.querySelector(".section1 .left .bottom").style.opacity = "0";
+    }
+
+    if (scrollTop >= 7500) {
+        document.querySelector(".section1 .right .bottom").style.opacity = "1";
+    } else {
+        document.querySelector(".section1 .right .bottom").style.opacity = "0";
+    }
+
+    // shift-screen
+    if (scrollTop >= 9000) {
+        document.querySelector(".section1 .left").style.width = "0vw";
+    } else {
+        document.querySelector(".section1 .left").style.width = "50vw";
+    }
+
+    if (scrollTop >= 9000) {
+        document.querySelector(".section1 .right").style.width = "100vw";
+    } else {
+        document.querySelector(".section1 .right").style.width = "50vw";
+    }
 });

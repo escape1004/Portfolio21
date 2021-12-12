@@ -47,7 +47,7 @@ body {
 /* section1 */
 #section1 {
     width: 100%;
-    height: 11000px;
+    height: 12000px;
     position: relative;
 }
 
@@ -72,7 +72,7 @@ body {
 .section1 .text-wrap .left,
 .section1 .text-wrap .right {
     position: absolute;
-    width: 50%;
+    width: 50vw;
     height: 100%;
     flex: 0 0 50%;
     display: flex;
@@ -82,6 +82,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     overflow: hidden;
+    transition: all 1s;
 }
 
 .section1 .text-wrap .left {
@@ -362,6 +363,8 @@ body {
     left: 20px;
     bottom: 20px;
     white-space: nowrap;
+    transition: all 1s;
+    opacity: 0;
 }
 
 .section1 .right .bottom {
@@ -373,6 +376,8 @@ body {
     bottom: 20px;
     white-space: nowrap;
     text-align: right;
+    transition: all 1s;
+    opacity: 0;
 }
 
 /* section2 */
@@ -874,6 +879,20 @@ body {
 #section8 .left {
     width: 50%;
     height: 100%;
+    padding: 10vh 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section8 .left .img {
+    height: 100%;
+}
+
+#section8 .left .img img {
+    height: 100%;
+    border-radius: 5px;
 }
 
 #section8 .left h2 {
@@ -881,8 +900,6 @@ body {
     font-size: 8vw;
     font-weight: 700;
     color: #E00120;
-    position: absolute;
-    bottom: 50px;
 }
 
 #section8 .part {
@@ -899,9 +916,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 10vh 2vw;
 }
 
 #section8 .right .flex-info {
@@ -909,9 +926,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 70px;
-    left: 0;
+}
+
+#section8 .right .mail-form {
+    width: 100%;
 }
 
 #section8 .right .info {
@@ -929,19 +947,6 @@ body {
 
 #section8 .right .info ul li {
     margin-bottom: 10px;
-}
-
-#section8 .right .img {
-    margin-left: auto;
-}
-
-#section8 .right img {
-    width: 10vw;
-}
-
-#section8 .right .mail-form {
-    position: absolute;
-    bottom: 70px;
 }
 
 #section8 .right .name {

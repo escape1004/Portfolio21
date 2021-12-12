@@ -10,12 +10,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" href="assets/css/style3.css">
-
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
@@ -140,6 +138,7 @@
 			<div class="part">
 				<div class="left">
 					<h1 class="skill-title">HTML</h1>
+					<h1 class="skill-title">HTML</h1>
 					<h2 class="skill-percent">90%</h2>
 				</div>
 				<div class="right">
@@ -156,11 +155,13 @@
 				</div>
 				<div class="right">
 					<h1 class="skill-title">CSS</h1>
+					<h1 class="skill-title">CSS</h1>
 					<h2 class="skill-percent">90%</h2>
 				</div>
 			</div>
 			<div class="part">
 				<div class="left">
+					<h1 class="skill-title js">J<span>AVA</span>S<span>CRIPT</span></h1>
 					<h1 class="skill-title js">J<span>AVA</span>S<span>CRIPT</span></h1>
 					<h2 class="skill-percent">80%</h2>
 				</div>
@@ -178,11 +179,13 @@
 				</div>
 				<div class="right">
 					<h1 class="skill-title jq">JQUERY</h1>
+					<h1 class="skill-title jq">JQUERY</h1>
 					<h2 class="skill-percent">80%</h2>
 				</div>
 			</div>
 			<div class="part">
 				<div class="left">
+					<h1 class="skill-title">REACT</h1>
 					<h1 class="skill-title">REACT</h1>
 					<h2 class="skill-percent">70%</h2>
 				</div>
@@ -199,6 +202,7 @@
 						뷰에 대한 설명입니다.</p>
 				</div>
 				<div class="right">
+					<h1 class="skill-title">VUE</h1>
 					<h1 class="skill-title">VUE</h1>
 					<h2 class="skill-percent">70%</h2>
 				</div>
@@ -534,6 +538,53 @@
 			</div>
 		</div>
 	</section>
+	<style>
+		/*
+			- Custom CSS ClipPath -
+			ref: https://bennettfeely.com/clippy/
+
+			참고해서 더 부드럽게 변경 하세요. 대충 만들었습니다.
+		*/
+		@keyframes water {
+			0% 	 { clip-path: polygon(5% 100%, 14% 100%, 22% 100%, 37% 100%, 53% 100%, 76% 100%, 88% 100%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			10%  { clip-path: polygon(0 88%, 12% 94%, 27% 95%, 43% 93%, 57% 90%, 70% 87%, 85% 87%, 100% 91%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			30%  { clip-path: polygon(0 75%, 17% 81%, 36% 80%, 49% 75%, 59% 68%, 73% 61%, 89% 62%, 100% 66%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			70%  { clip-path: polygon(0 21%, 11% 18%, 27% 18%, 43% 23%, 55% 32%, 74% 39%, 91% 36%, 100% 27%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			100% { clip-path: polygon(0 0, 11% 0, 23% 0, 34% 0, 56% 0, 74% 0, 86% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+		}
+
+		@keyframes waterOut {
+			0% 	 { clip-path: polygon(0 0, 11% 0, 23% 0, 34% 0, 56% 0, 74% 0, 86% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			10%  { clip-path: polygon(0 21%, 11% 18%, 27% 18%, 43% 23%, 55% 32%, 74% 39%, 91% 36%, 100% 27%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			30%  { clip-path: polygon(0 75%, 17% 81%, 36% 80%, 49% 75%, 59% 68%, 73% 61%, 89% 62%, 100% 66%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			70%  { clip-path: polygon(0 88%, 12% 94%, 27% 95%, 43% 93%, 57% 90%, 70% 87%, 85% 87%, 100% 91%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+			100% { clip-path: polygon(5% 100%, 14% 100%, 22% 100%, 37% 100%, 53% 100%, 76% 100%, 88% 100%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%) }
+		}
+
+		/* 복제한 타이틀 차오를 물 색깔 */
+		.skill-title:nth-of-type(2) {
+			color: #fff !important;
+		}
+
+		/* 안에 span overflow 나서 적용안되길래 넣었습니다 */
+		.skill-title.js {	
+			width: 150% !important;
+		}
+	</style>
+
+	<script>
+		// observer = 관측자
+		const observer = new IntersectionObserver(([entry]) => {
+			if (!entry.isIntersecting) return;		// 화면에 들어오지 않으면 아무것도 안함.
+
+			// 화면에 들어오면 water 애니메이션 주기
+			entry.target.style.animation = 'water 2s linear 1 forwards';
+		}, { rootMargin: '-100px' });	// 화면 바닥 offset, -100px 이면 바닥에서부터 100px 더 올라와야 관측됨
+
+		// 한개씩 더 만든 title 선택해서 관측시킴
+		document.querySelectorAll('.skill-title:nth-of-type(2), .skill-title js:nth-of-type(2), .skill-title jq:nth-of-type(2)')
+			.forEach(title => observer.observe(title));
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
