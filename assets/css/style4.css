@@ -382,7 +382,7 @@ body {
 
 /* section2 */
 #horizontal1 {
-    width: 800vw;
+    width: 16000px;
     height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
@@ -442,10 +442,11 @@ body {
     position: absolute;
     width: 20vw;
     left: 220vw;
-    top: 75%;
+    top: 80%;
     transform: translateY(-75%);
     z-index: -1;
     /* opacity: 0; */
+    transition: all 1s;
 }
 
 #section2 .first-image.active {
@@ -459,11 +460,12 @@ body {
     top: 8%;
     transform: translateY(-8%);
     z-index: -1;
+    transition: all 1s;
 }
 
 /* section3 */
 #section3 {
-    height: 700vh;
+    height: 7000px;
     width: 100%;
     background-color: #000;
     color: #fff;

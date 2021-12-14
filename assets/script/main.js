@@ -240,4 +240,70 @@ window.addEventListener("scroll", function () {
     } else {
         document.querySelector(".section1 .right").style.width = "50vw";
     }
+
+    // section2 image
+    if (scrollTop >= 18000) {
+        document.querySelector("#section2 .first-image").style.top = "80%";
+        document.querySelector("#section2 .first-image").style.opacity = "1";
+    } else {
+        document.querySelector("#section2 .first-image").style.top = "88%";
+        document.querySelector("#section2 .first-image").style.opacity = "0";
+    }
+
+    if (scrollTop >= 24000) {
+        document.querySelector("#section2 .second-image").style.top = "8%";
+        document.querySelector("#section2 .second-image").style.opacity = "1";
+    } else {
+        document.querySelector("#section2 .second-image").style.top = "0%";
+        document.querySelector("#section2 .second-image").style.opacity = "0";
+    }
+
+    // section3 text-event
+    if (scrollTop >= 29500) {
+        document.querySelector("#section3 .part:nth-child(2) .skill-title:nth-of-type(2)").style.animation = "water 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(2) .skill-percent:nth-of-type(2)").style.animation = "water 2s linear forwards";
+    } else {
+        document.querySelector("#section3 .part:nth-child(2) .skill-title:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(2) .skill-percent:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+    }
+
+    if (scrollTop >= 30500) {
+        document.querySelector("#section3 .part:nth-child(3) .skill-title:nth-of-type(2)").style.animation = "water 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(3) .skill-percent:nth-of-type(2)").style.animation = "water 2s linear forwards";
+    } else {
+        document.querySelector("#section3 .part:nth-child(3) .skill-title:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(3) .skill-percent:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+    }
+
+    if (scrollTop >= 31500) {
+        document.querySelector("#section3 .part:nth-child(4) .skill-title:nth-of-type(2)").style.animation = "water 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(4) .skill-percent:nth-of-type(2)").style.animation = "water 2s linear forwards";
+    } else {
+        document.querySelector("#section3 .part:nth-child(4) .skill-title:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(4) .skill-percent:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+    }
+
+    if (scrollTop >= 32500) {
+        document.querySelector("#section3 .part:nth-child(5) .skill-title:nth-of-type(2)").style.animation = "water 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(5) .skill-percent:nth-of-type(2)").style.animation = "water 2s linear forwards";
+    } else {
+        document.querySelector("#section3 .part:nth-child(5) .skill-title:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(5) .skill-percent:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+    }
+
+    if (scrollTop >= 33300) {
+        document.querySelector("#section3 .part:nth-child(6) .skill-title:nth-of-type(2)").style.animation = "water 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(6) .skill-percent:nth-of-type(2)").style.animation = "water 2s linear forwards";
+    } else {
+        document.querySelector("#section3 .part:nth-child(6) .skill-title:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(6) .skill-percent:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+    }
+
+    if (scrollTop >= 34000) {
+        document.querySelector("#section3 .part:nth-child(7) .skill-title:nth-of-type(2)").style.animation = "water 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(7) .skill-percent:nth-of-type(2)").style.animation = "water 2s linear forwards";
+    } else {
+        document.querySelector("#section3 .part:nth-child(7) .skill-title:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+        document.querySelector("#section3 .part:nth-child(7) .skill-percent:nth-of-type(2)").style.animation = "waterOut 2s linear forwards";
+    }
 });
